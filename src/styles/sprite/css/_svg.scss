@@ -1,0 +1,14 @@
+%svg-common {
+	background: url("/svg/sprite.css-60b06065.svg") no-repeat;
+}
+
+.svg-icon-important-ver-2-14 {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-icon-important-ver-2-14-dims {
+	width: 18px;
+	height: 18px;
+}
+
