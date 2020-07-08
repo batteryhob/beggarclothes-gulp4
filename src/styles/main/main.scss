@@ -22,6 +22,12 @@ html {
   font-weight: 500;
 }
 
+button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
 .mobile {
   display: block;
 }
@@ -37,32 +43,85 @@ html {
   header {
     position: relative;
     min-width: 320px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+    z-index: 999;
+    .alert{
+      position: relative;
+      height: 40px;
+      line-height: 40px;
+      background-color: #222;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #fff;
+      .left{
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        transition: all .2s ease-in;
+        &:hover{
+          color: #666;
+        }
+      }
+      .list{
+        display: flex;
+        transition: all .2s ease-in;
+        li{
+          min-width: 100%;
+        }
+        &.step2{
+          transform: translate(-100%);
+        }
+        &.step3{
+          transform: translate(-200%);
+        }
+      }
+      .right{
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        transition: all .2s ease-in;
+        &:hover{
+          color: #666;
+        }
+      }
+    }
     .content {
       display: flex;
-      padding: 24px 12px;
-      text-align: center;
+      padding: 18px 12px;
+      text-align: center;      
       .left{
         flex: 1;
         text-align: left;
+        height: 42px;
+        line-height: 42px;
+        i{
+          font-size: 1.6rem;
+          color: #999;
+        }
       }
       .logo{
         flex: 1;
+        img{
+          height: 42px;
+        }
       }
       .right{
         flex: 1;
         text-align: right;
+        height: 42px;
+        line-height: 42px;
+        i{
+          font-size: 1.6rem;
+          color: #999;
+          margin-left: 5px;
+        }
       }
-    }
-    .alert{
-      height: 40px;
-      line-height: 40px;
-      background-color: #ddd;
-      text-align: center;
     }
   }
 
   main {  
     section {
+      position: relative;
       min-width: 320px;
       .content{
         .content-main{
@@ -80,17 +139,31 @@ html {
                 }
                 .desc{
                   position: absolute;
-                  left: 10px;
-                  bottom: 20px;
+                  width: 250px;
+                  right: 0px;
+                  bottom: 30px;
+                  background-color: #fff;
+                  padding: 20px 20px;
+                  box-sizing: border-box;
                   p{
-                    font-size: 40px;
+                    font-size: 20px;
                     margin-bottom: 10px;
+                    &.sub{
+                      display: inline-block;
+                      width: 80%;
+                      font-size: 12px;
+                    }
                   }
                   button {
-                    padding: 12px 24px;
-                    background-color: transparent;
-                    border: 1px solid #ccc;
-                    border-radius: 20px;
+                    display: inline-block;
+                    padding: 0px;
+                    text-align: left;
+                    box-sizing: border-box;
+                    border-bottom: 1px solid #fff;
+                    transition: all .2s ease-in;
+                    &:hover{
+                      border-bottom: 1px solid #ccc;
+                    }
                   }
                 }
               }
@@ -98,6 +171,7 @@ html {
           }
         }
         .content-tags{
+          margin-top: 30px;
           .title{
             position: relative;
             padding: 12px;
@@ -120,25 +194,27 @@ html {
               font-size: 12px;
               font-weight: 700;
               li {
-                margin-bottom: 5px;
+                height: 40px;
                 .tag{
                   display: flex;
                   text-align: center;
                   .thumb{
-                    flex: 1;
+                    width: 30px;
+                    line-height: 40px;
                     img{
                       width: 30px;
                       height: 30px;
                       border-radius: 15px;
+                      vertical-align: middle;
                     }
                   }
                   .rank{
-                    flex: 1;
-                    line-height: 36px;
+                    width: 50px;
+                    line-height: 40px;
                   }
                   .desc{
-                    flex: 5;
                     text-align: left;
+                    line-height: 20px;
                   }
                 }
               }
@@ -146,6 +222,7 @@ html {
           }
         }
         .content-sub{
+          margin-top: 30px;
           .title{
             position: relative;
             padding: 12px;
@@ -169,44 +246,101 @@ html {
               overflow-x: scroll;
               li {
                 flex: 1;
-                margin-right: 5px;
+                margin-right: 10px;
                 .feed{
-                  width: 200px;
-                  img{
-                    width: 200px;
-                    height: 200px;            
+                  .thumbnail{
+                    width: 160px;
+                    height: 200px;
+                    overflow: hidden;
+                    img{   
+                      width: 100%;
+                    }
                   }
                   .desc{
                     margin-top: 10px;
                     .designer{
                       display: inline-block;
                       font-size: 12px;
-                      padding: 2px 8px;
+                      padding: 1px 10px;
                       border: 1px solid #333;
-                      border-radius: 100px;
                     }
                     .name{
-                      font-size: 15px;
-                      line-height: 133%;
-                      color: #292929;
-                      margin-top: 3px;
-                      margin-left: 2px;
-                      margin-bottom: 3px;
+                      margin-top: 10px;
                       max-width: 100%;
                       overflow: hidden;
                       text-overflow: ellipsis;
                       white-space: nowrap;
+                      font-size: 14px;
+                      line-height: 133%;
+                      color: #292929;
                     }
-                    .date {
+                    .price {
                       margin-left: 2px;
                       line-height: 23px;
-                      font-size: 12px;
-                      color: #909090;
+                      font-size: 13px;
+                      color: #666;
                     }
                     .interactive{
-                      font-size: 12px;
-                      margin-left: 2px;
+                      span{
+                        font-size: 12px;
+                        margin-right: 2px;
+                        i{
+                          margin-right: 2px;
+                        }
+                      }
                     }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .content-sale{
+          margin-top: 30px;
+          margin-bottom: 30px;
+          .title{
+            position: relative;
+            padding: 12px;
+            font-size: 20px;
+            .sub{
+              font-size: 10px;
+              color: #ccc;        
+            }
+            .more{
+              position: absolute;
+              top: 20px;
+              right: 12px;
+              font-size: 10px;
+              color: #ccc;
+            };
+          }
+          .mails{
+            ul {
+              padding: 12px;
+              li {
+                border-left: 2px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                box-sizing: border-box;
+                padding: 10px 15px;
+                &:last-child{
+                  border-bottom: none;
+                }
+                .mail{
+                  position: relative;
+                  .subject{
+                    margin-bottom: 5px;
+                    font-size: 20px;
+                  }
+                  .content{
+                    margin-bottom: 5px;
+                    font-size: 14px;
+                  }
+                  .date{
+                    position: absolute;
+                    top: 50%;
+                    right: 0px;
+                    margin-top: -6px;
+                    font-size: 12px;
                   }
                 }
               }
@@ -217,13 +351,33 @@ html {
     }  
   }
 
-  footer {
-    background-color: #222;
+  footer {    
     width: 100%;
+    padding: 18px 12px;
+    background-color: #222;
     .wrapper{
       height: 400px;
       color: #aaa;
+      .logo{
+        img{
+          width: 100px;
+        }
+      }
+      .policy{
+        margin-top: 10px;
+        padding: 5px;
+        border-bottom: 1px solid #aaa;
+        ul{
+          li{
+            margin-bottom: 5px;
+          }
+        }
+      }
+      .copy{
+        margin-top: 5px;
+      }     
     }
   }
-  
+
+  @import './pc';  
 }
