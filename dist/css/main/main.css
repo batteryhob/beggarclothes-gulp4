@@ -291,19 +291,23 @@ button {
         flex: 1;
         text-align: left;
         height: 42px;
-        line-height: 42px; }
+        line-height: 42px;
+        transition: all .2s ease-in; }
         #main header .content .left i {
           font-size: 1.6rem;
           color: #999; }
       #main header .content .logo {
-        flex: 1; }
+        flex: 1;
+        transition: all .2s ease-in; }
         #main header .content .logo img {
-          height: 42px; }
+          height: 42px;
+          margin: 0 auto; }
       #main header .content .right {
         flex: 1;
         text-align: right;
         height: 42px;
-        line-height: 42px; }
+        line-height: 42px;
+        transition: all .2s ease-in; }
         #main header .content .right i {
           font-size: 1.6rem;
           color: #999;
@@ -311,176 +315,214 @@ button {
   #main main section {
     position: relative;
     min-width: 320px; }
-    #main main section .content .content-main ul {
-      display: flex;
-      width: 200vw; }
-      #main main section .content .content-main ul li {
-        flex: 1;
-        min-width: 100vw; }
-        #main main section .content .content-main ul li .feature {
-          position: relative; }
-          #main main section .content .content-main ul li .feature img {
-            width: 100%;
-            height: 500px; }
-          #main main section .content .content-main ul li .feature .desc {
-            position: absolute;
-            width: 250px;
-            right: 0px;
-            bottom: 30px;
-            background-color: #fff;
-            padding: 20px 20px;
-            box-sizing: border-box; }
-            #main main section .content .content-main ul li .feature .desc p {
-              font-size: 20px;
-              margin-bottom: 10px; }
-              #main main section .content .content-main ul li .feature .desc p.sub {
-                display: inline-block;
-                width: 80%;
-                font-size: 12px; }
-            #main main section .content .content-main ul li .feature .desc button {
-              display: inline-block;
-              padding: 0px;
-              text-align: left;
-              box-sizing: border-box;
-              border-bottom: 1px solid #fff;
-              transition: all .2s ease-in; }
-              #main main section .content .content-main ul li .feature .desc button:hover {
-                border-bottom: 1px solid #ccc; }
-    #main main section .content .content-tags {
-      margin-top: 30px; }
-      #main main section .content .content-tags .title {
-        position: relative;
-        padding: 12px;
-        font-size: 20px; }
-        #main main section .content .content-tags .title .sub {
-          font-size: 10px;
-          color: #ccc; }
-        #main main section .content .content-tags .title .more {
-          position: absolute;
-          top: 20px;
-          right: 12px;
-          font-size: 10px;
-          color: #ccc; }
-      #main main section .content .content-tags .ranking ul {
-        padding: 12px;
-        font-size: 12px;
-        font-weight: 700; }
-        #main main section .content .content-tags .ranking ul li {
-          height: 40px; }
-          #main main section .content .content-tags .ranking ul li .tag {
-            display: flex;
-            text-align: center; }
-            #main main section .content .content-tags .ranking ul li .tag .thumb {
-              width: 30px;
-              line-height: 40px; }
-              #main main section .content .content-tags .ranking ul li .tag .thumb img {
-                width: 30px;
-                height: 30px;
-                border-radius: 15px;
-                vertical-align: middle; }
-            #main main section .content .content-tags .ranking ul li .tag .rank {
-              width: 50px;
-              line-height: 40px; }
-            #main main section .content .content-tags .ranking ul li .tag .desc {
-              text-align: left;
-              line-height: 20px; }
-    #main main section .content .content-sub {
-      margin-top: 30px; }
-      #main main section .content .content-sub .title {
-        position: relative;
-        padding: 12px;
-        font-size: 20px; }
-        #main main section .content .content-sub .title .sub {
-          font-size: 10px;
-          color: #ccc; }
-        #main main section .content .content-sub .title .more {
-          position: absolute;
-          top: 20px;
-          right: 12px;
-          font-size: 10px;
-          color: #ccc; }
-      #main main section .content .content-sub .feeds ul {
+    #main main section .content {
+      margin-bottom: 150px; }
+      #main main section .content .content-main ul {
         display: flex;
-        padding: 12px;
-        overflow-x: scroll; }
-        #main main section .content .content-sub .feeds ul li {
+        overflow-x: scroll;
+        overflow-y: hidden; }
+        #main main section .content .content-main ul li {
           flex: 1;
-          margin-right: 10px; }
-          #main main section .content .content-sub .feeds ul li .feed .thumbnail {
-            width: 160px;
-            height: 200px;
-            overflow: hidden; }
-            #main main section .content .content-sub .feeds ul li .feed .thumbnail img {
-              width: 100%; }
-          #main main section .content .content-sub .feeds ul li .feed .desc {
-            margin-top: 10px; }
-            #main main section .content .content-sub .feeds ul li .feed .desc .designer {
-              display: inline-block;
-              font-size: 12px;
-              padding: 1px 10px;
-              border: 1px solid #333; }
-            #main main section .content .content-sub .feeds ul li .feed .desc .name {
-              margin-top: 10px;
-              max-width: 100%;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              font-size: 14px;
-              line-height: 133%;
-              color: #292929; }
-            #main main section .content .content-sub .feeds ul li .feed .desc .price {
-              margin-left: 2px;
-              line-height: 23px;
-              font-size: 13px;
-              color: #666; }
-            #main main section .content .content-sub .feeds ul li .feed .desc .interactive span {
-              font-size: 12px;
-              margin-right: 2px; }
-              #main main section .content .content-sub .feeds ul li .feed .desc .interactive span i {
-                margin-right: 2px; }
-    #main main section .content .content-sale {
-      margin-top: 30px;
-      margin-bottom: 30px; }
-      #main main section .content .content-sale .title {
-        position: relative;
-        padding: 12px;
-        font-size: 20px; }
-        #main main section .content .content-sale .title .sub {
-          font-size: 10px;
-          color: #ccc; }
-        #main main section .content .content-sale .title .more {
-          position: absolute;
-          top: 20px;
-          right: 12px;
-          font-size: 10px;
-          color: #ccc; }
-      #main main section .content .content-sale .mails ul {
-        padding: 12px; }
-        #main main section .content .content-sale .mails ul li {
-          border-left: 2px solid #ccc;
-          border-bottom: 1px solid #ccc;
-          box-sizing: border-box;
-          padding: 10px 15px; }
-          #main main section .content .content-sale .mails ul li:last-child {
-            border-bottom: none; }
-          #main main section .content .content-sale .mails ul li .mail {
-            position: relative; }
-            #main main section .content .content-sale .mails ul li .mail .subject {
-              margin-bottom: 5px;
-              font-size: 20px; }
-            #main main section .content .content-sale .mails ul li .mail .content {
-              margin-bottom: 5px;
-              font-size: 14px; }
-            #main main section .content .content-sale .mails ul li .mail .date {
+          min-width: 100vw; }
+          #main main section .content .content-main ul li .feature {
+            position: relative;
+            background-color: #eee;
+            height: 500px; }
+            #main main section .content .content-main ul li .feature img {
+              width: 100%;
+              min-width: 320px;
+              max-width: 400px;
+              height: auto;
+              transition: all .2s ease-in; }
+            #main main section .content .content-main ul li .feature .desc {
               position: absolute;
-              top: 50%;
+              width: 250px;
               right: 0px;
-              margin-top: -6px;
-              font-size: 12px; }
+              bottom: 30px;
+              background-color: #fff;
+              padding: 20px 20px;
+              box-sizing: border-box;
+              transition: all .2s ease-in;
+              box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2); }
+              #main main section .content .content-main ul li .feature .desc p {
+                font-size: 20px;
+                margin-bottom: 10px; }
+                #main main section .content .content-main ul li .feature .desc p.sub {
+                  display: inline-block;
+                  width: 80%;
+                  font-size: 12px; }
+              #main main section .content .content-main ul li .feature .desc button {
+                display: inline-block;
+                padding: 0px;
+                text-align: left;
+                box-sizing: border-box;
+                border-bottom: 1px solid #fff;
+                transition: all .2s ease-in; }
+                #main main section .content .content-main ul li .feature .desc button:hover {
+                  border-bottom: 1px solid #ccc; }
+      #main main section .content .content-tags {
+        margin-top: 50px; }
+        #main main section .content .content-tags .title {
+          position: relative;
+          padding: 12px;
+          font-size: 20px; }
+          #main main section .content .content-tags .title .sub {
+            font-size: 10px;
+            color: #ccc; }
+          #main main section .content .content-tags .title .more {
+            position: absolute;
+            top: 20px;
+            right: 12px;
+            padding: 2px 10px;
+            font-size: 10px;
+            color: #ccc;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            transition: background-color .2s ease-in; }
+            #main main section .content .content-tags .title .more:hover {
+              background-color: #000;
+              border-color: #000;
+              color: #fff; }
+        #main main section .content .content-tags .ranking ul {
+          padding: 12px;
+          font-size: 12px;
+          font-weight: 500; }
+          #main main section .content .content-tags .ranking ul li {
+            height: 50px; }
+            #main main section .content .content-tags .ranking ul li .tag {
+              display: flex;
+              text-align: center; }
+              #main main section .content .content-tags .ranking ul li .tag .thumb {
+                width: 40px;
+                line-height: 40px; }
+                #main main section .content .content-tags .ranking ul li .tag .thumb img {
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 20px;
+                  vertical-align: middle;
+                  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2); }
+              #main main section .content .content-tags .ranking ul li .tag .rank {
+                width: 50px;
+                line-height: 50px; }
+              #main main section .content .content-tags .ranking ul li .tag .desc {
+                text-align: left;
+                line-height: 25px; }
+      #main main section .content .content-sub {
+        margin-top: 50px; }
+        #main main section .content .content-sub .title {
+          position: relative;
+          padding: 12px;
+          font-size: 20px; }
+          #main main section .content .content-sub .title .sub {
+            font-size: 10px;
+            color: #ccc; }
+          #main main section .content .content-sub .title .more {
+            position: absolute;
+            top: 20px;
+            right: 12px;
+            padding: 2px 10px;
+            font-size: 10px;
+            color: #ccc;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            transition: background-color .2s ease-in; }
+            #main main section .content .content-sub .title .more:hover {
+              background-color: #000;
+              border-color: #000;
+              color: #fff; }
+        #main main section .content .content-sub .feeds ul {
+          display: flex;
+          padding: 12px;
+          overflow-x: scroll; }
+          #main main section .content .content-sub .feeds ul li {
+            flex: 1;
+            max-width: 160px;
+            margin-right: 20px; }
+            #main main section .content .content-sub .feeds ul li .feed .thumbnail {
+              width: 160px;
+              height: 200px;
+              overflow: hidden; }
+              #main main section .content .content-sub .feeds ul li .feed .thumbnail img {
+                width: 100%; }
+            #main main section .content .content-sub .feeds ul li .feed .desc {
+              margin-top: 10px; }
+              #main main section .content .content-sub .feeds ul li .feed .desc .designer {
+                font-size: 13px; }
+              #main main section .content .content-sub .feeds ul li .feed .desc .name {
+                margin-top: 5px;
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: 13px;
+                line-height: 133%;
+                color: #292929; }
+              #main main section .content .content-sub .feeds ul li .feed .desc .price {
+                line-height: 23px;
+                font-size: 13px;
+                color: #666; }
+              #main main section .content .content-sub .feeds ul li .feed .desc .interactive {
+                margin-top: 5px; }
+                #main main section .content .content-sub .feeds ul li .feed .desc .interactive span {
+                  font-size: 12px;
+                  margin-right: 5px; }
+                  #main main section .content .content-sub .feeds ul li .feed .desc .interactive span i {
+                    margin-right: 2px; }
+      #main main section .content .content-sale {
+        margin-top: 50px; }
+        #main main section .content .content-sale .title {
+          position: relative;
+          padding: 12px;
+          font-size: 20px; }
+          #main main section .content .content-sale .title .sub {
+            font-size: 10px;
+            color: #ccc; }
+          #main main section .content .content-sale .title .more {
+            position: absolute;
+            top: 20px;
+            right: 12px;
+            padding: 2px 10px;
+            font-size: 10px;
+            color: #ccc;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            transition: background-color .2s ease-in; }
+            #main main section .content .content-sale .title .more:hover {
+              background-color: #000;
+              border-color: #000;
+              color: #fff; }
+        #main main section .content .content-sale .mails ul {
+          padding: 12px; }
+          #main main section .content .content-sale .mails ul li {
+            border-left: 2px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            box-sizing: border-box;
+            padding: 10px 15px;
+            transition: all .2s ease-in; }
+            #main main section .content .content-sale .mails ul li:last-child {
+              border-bottom: none; }
+            #main main section .content .content-sale .mails ul li:hover {
+              background-color: #eee; }
+            #main main section .content .content-sale .mails ul li .mail {
+              position: relative; }
+              #main main section .content .content-sale .mails ul li .mail .subject {
+                margin-bottom: 5px;
+                font-size: 20px; }
+              #main main section .content .content-sale .mails ul li .mail .content {
+                margin-bottom: 5px;
+                font-size: 14px; }
+              #main main section .content .content-sale .mails ul li .mail .date {
+                position: absolute;
+                top: 50%;
+                right: 0px;
+                margin-top: -6px;
+                font-size: 12px; }
   #main footer {
     width: 100%;
     padding: 18px 12px;
-    background-color: #222; }
+    font-size: 12px;
+    background-color: #222;
+    transition: all .2s ease-in; }
     #main footer .wrapper {
       height: 400px;
       color: #aaa; }
@@ -492,9 +534,74 @@ button {
         border-bottom: 1px solid #aaa; }
         #main footer .wrapper .policy ul li {
           margin-bottom: 5px; }
+          #main footer .wrapper .policy ul li span {
+            cursor: pointer;
+            transition: all .2s ease-in; }
+            #main footer .wrapper .policy ul li span:hover {
+              border-bottom: 1px solid #aaa; }
       #main footer .wrapper .copy {
         margin-top: 5px; }
   @media only screen and (min-width: 769px) {
-    #main main section {
+    #main .mobile {
+      display: none; }
+    #main .desktop {
+      display: block; }
+    #main header .alert .left {
+      left: 100px; }
+    #main header .alert .right {
+      right: 100px; }
+    #main header .content {
+      padding: 18px 12px; }
+      #main header .content .left {
+        height: 22px;
+        line-height: 22px; }
+      #main header .content .logo {
+        text-align: left;
+        margin-left: 100px; }
+        #main header .content .logo img {
+          margin: initial;
+          height: 22px; }
+      #main header .content .right {
+        height: 22px;
+        line-height: 22px;
+        margin-right: 100px; }
+    #main main section .content .content-main ul li .feature img {
+      margin-left: 25%; }
+    #main main section .content .content-main ul li .feature .desc {
+      margin-right: 25%; }
+    #main main section .content .content-tags {
       max-width: 1000px;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      margin-top: 50px; }
+      #main main section .content .content-tags .ranking ul {
+        display: flex;
+        padding: 12px;
+        font-size: 12px;
+        font-weight: 500; }
+        #main main section .content .content-tags .ranking ul li {
+          flex: 1;
+          height: 200px; }
+          #main main section .content .content-tags .ranking ul li .tag {
+            display: block;
+            text-align: center; }
+            #main main section .content .content-tags .ranking ul li .tag .thumb img {
+              width: 100px;
+              height: 100px;
+              border-radius: 50px;
+              margin-left: 50px; }
+            #main main section .content .content-tags .ranking ul li .tag .rank {
+              width: initial;
+              line-height: 40px; }
+            #main main section .content .content-tags .ranking ul li .tag .desc {
+              text-align: center;
+              line-height: 20px; }
+    #main main section .content .content-sub {
+      max-width: 1000px;
+      margin: 0 auto;
+      margin-top: 50px; }
+    #main main section .content .content-sale {
+      max-width: 1000px;
+      margin: 0 auto;
+      margin-top: 50px; }
+    #main footer {
+      padding: 18px 100px; } }

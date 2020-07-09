@@ -1,0 +1,78 @@
+/* app.sass */
+@media only screen  and (min-width : 769px) {
+
+  .mobile {
+    display: none;
+  }
+  
+  .desktop {
+    display: block;
+  }
+
+  header {
+    $headersize: 22px;
+    .alert {
+      .left {
+        left: 100px;
+      }
+      .right{
+        right: 100px;
+      }
+    }
+    .content {
+      padding: 18px 12px;     
+      .left{
+        height: $headersize;
+        line-height: $headersize;        
+      }
+      .logo{
+        text-align: left;        
+        margin-left: 100px;
+        img{
+          margin: initial;
+          height: $headersize;
+        }
+      }
+      .right{
+        height: $headersize;
+        line-height: $headersize;
+        margin-right: 100px;
+      }
+    }
+  }
+
+  main {  
+    section{
+      .content-detail{
+        max-width: 1280px;
+        margin: 0 auto;
+        .imgs{
+          margin-left: 50px;
+          .wrapper{
+            width: 70%;
+            ul{              
+              li{
+                display: inline;
+                min-width: 100%;
+                div{
+                  height: 600px;
+                }
+              }
+            }
+          }
+        }
+        .desc{
+          left: initial;
+          right: 50px;
+          bottom: 100px;      
+          background-color: #FFF;    
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 18px 100px;    
+  }
+}
+

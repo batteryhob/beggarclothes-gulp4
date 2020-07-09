@@ -1,23 +1,116 @@
 /* app.sass */
 @media only screen  and (min-width : 769px) {
-  header {
 
+  .mobile {
+    display: none;
+  }
+  
+  .desktop {
+    display: block;
+  }
+
+  header {
+    $headersize: 22px;
+    .alert {
+      .left {
+        left: 100px;
+      }
+      .right{
+        right: 100px;
+      }
+    }
+    .content {
+      padding: 18px 12px;     
+      .left{
+        height: $headersize;
+        line-height: $headersize;        
+      }
+      .logo{
+        text-align: left;        
+        margin-left: 100px;
+        img{
+          margin: initial;
+          height: $headersize;
+        }
+      }
+      .right{
+        height: $headersize;
+        line-height: $headersize;
+        margin-right: 100px;
+      }
+    }
   }
 
   main {
-    section{
-      max-width: 1000px;
-      margin: 0 auto;
+    section{      
       .content{
         .content-main{
-
+          ul{
+            li{
+              .feature{
+                img{
+                  margin-left: 25%;
+                }
+                .desc{
+                  margin-right: 25%;
+                }
+              }
+            }
+          }
+        }
+        .content-tags{
+          max-width: 1000px;
+          margin: 0 auto;
+          margin-top: 50px;
+          .ranking{
+            ul {
+              display: flex;
+              padding: 12px;
+              font-size: 12px;
+              font-weight: 500;
+              li {
+                flex: 1;
+                height: 200px;                
+                .tag{
+                  display: block;
+                  text-align: center;
+                  .thumb{
+                    img{
+                      width: 100px;
+                      height: 100px;
+                      border-radius: 50px;
+                      margin-left: 50px;                      
+                    }
+                  }
+                  .rank{
+                    width: initial;
+                    line-height: 40px;
+                  }
+                  .desc{
+                    text-align: center;
+                    line-height: 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .content-sub{
+          max-width: 1000px;
+          margin: 0 auto;
+          margin-top: 50px;
+        }
+        .content-sale{
+          max-width: 1000px;
+          margin: 0 auto;
+          margin-top: 50px;
         }
       }
     }
   }
 
   footer {
-
+    padding: 18px 100px;    
   }
 }
 
