@@ -317,7 +317,7 @@ button {
     min-width: 320px; }
     #detail main section .content-detail {
       position: relative;
-      margin-bottom: 300px; }
+      margin-bottom: 150px; }
       #detail main section .content-detail .imgs .wrapper ul {
         display: flex;
         overflow-x: scroll;
@@ -531,6 +531,19 @@ button {
             vertical-align: middle;
             border-radius: 5px;
             margin-right: 5px; }
+    #detail main section .content-comment {
+      padding: 20px; }
+      #detail main section .content-comment .title {
+        font-size: 20px; }
+      #detail main section .content-comment .comment {
+        margin-top: 20px; }
+        #detail main section .content-comment .comment .desc {
+          margin-top: 10px;
+          font-size: 14px; }
+      #detail main section .content-comment .graph {
+        margin-top: 20px; }
+      #detail main section .content-comment .review {
+        margin-top: 20px; }
   #detail footer {
     width: 100%;
     padding: 18px 12px;
@@ -596,5 +609,8 @@ button {
         right: 50px;
         bottom: 100px;
         background-color: #FFF; }
+    #detail main section .content-comment {
+      max-width: 1000px;
+      margin: 0 auto; }
     #detail footer {
       padding: 18px 100px; } }

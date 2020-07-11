@@ -367,8 +367,10 @@ button {
           padding: 12px;
           font-size: 20px; }
           #main main section .content .content-tags .title .sub {
-            font-size: 10px;
+            font-size: 11px;
             color: #ccc; }
+            #main main section .content .content-tags .title .sub i {
+              margin-right: 2px; }
           #main main section .content .content-tags .title .more {
             position: absolute;
             top: 20px;
@@ -393,7 +395,6 @@ button {
               display: flex;
               text-align: center; }
               #main main section .content .content-tags .ranking ul li .tag .thumb {
-                width: 40px;
                 line-height: 40px; }
                 #main main section .content .content-tags .ranking ul li .tag .thumb img {
                   width: 40px;
@@ -414,8 +415,10 @@ button {
           padding: 12px;
           font-size: 20px; }
           #main main section .content .content-sub .title .sub {
-            font-size: 10px;
+            font-size: 11px;
             color: #ccc; }
+            #main main section .content .content-sub .title .sub i {
+              margin-right: 2px; }
           #main main section .content .content-sub .title .more {
             position: absolute;
             top: 20px;
@@ -475,8 +478,10 @@ button {
           padding: 12px;
           font-size: 20px; }
           #main main section .content .content-sale .title .sub {
-            font-size: 10px;
+            font-size: 11px;
             color: #ccc; }
+            #main main section .content .content-sale .title .sub i {
+              margin-right: 2px; }
           #main main section .content .content-sale .title .more {
             position: absolute;
             top: 20px;
@@ -570,7 +575,7 @@ button {
     #main main section .content .content-main ul li .feature .desc {
       margin-right: 25%; }
     #main main section .content .content-tags {
-      max-width: 1000px;
+      max-width: 1280px;
       margin: 0 auto;
       margin-top: 50px; }
       #main main section .content .content-tags .ranking ul {
@@ -587,8 +592,7 @@ button {
             #main main section .content .content-tags .ranking ul li .tag .thumb img {
               width: 100px;
               height: 100px;
-              border-radius: 50px;
-              margin-left: 50px; }
+              border-radius: 50px; }
             #main main section .content .content-tags .ranking ul li .tag .rank {
               width: initial;
               line-height: 40px; }
@@ -596,11 +600,11 @@ button {
               text-align: center;
               line-height: 20px; }
     #main main section .content .content-sub {
-      max-width: 1000px;
+      max-width: 1280px;
       margin: 0 auto;
       margin-top: 50px; }
     #main main section .content .content-sale {
-      max-width: 1000px;
+      max-width: 1280px;
       margin: 0 auto;
       margin-top: 50px; }
     #main footer {

@@ -125,8 +125,40 @@ button{
 
   main {  
     section{
+      min-width: 320px;
       .content-designer {
-        
+        position: relative;
+        height: 400px;
+        overflow: hidden;
+        img{
+          width: 100%;
+        }
+        .wrapper{
+          position: absolute;
+          width: 100%;
+          left: 0px;
+          bottom: 0px;
+          .rect{
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: #000;
+            opacity: .5;            
+            color: #fff;
+            p{
+              font-size: 20px;
+            }
+            .line{
+              display: inline-block;
+              width: 20%;
+              height: 3px;
+              background-color: #fff;
+            }
+            .sub{
+              margin-top: 10px;
+              font-size: 12px;
+            }
+          }
+        }
       }
       .content-feed{
         .feedlist{

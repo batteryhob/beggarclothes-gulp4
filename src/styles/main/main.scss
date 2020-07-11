@@ -190,8 +190,11 @@ button{
             padding: 12px;
             font-size: 20px;
             .sub{
-              font-size: 10px;
-              color: #ccc;        
+              font-size: 11px;
+              color: #ccc;
+              i{
+                margin-right: 2px;
+              }     
             }
             .more{
               position: absolute;
@@ -221,7 +224,6 @@ button{
                   display: flex;
                   text-align: center;
                   .thumb{
-                    width: 40px;
                     line-height: 40px;
                     img{
                       width: 40px;
@@ -251,8 +253,11 @@ button{
             padding: 12px;
             font-size: 20px;
             .sub{
-              font-size: 10px;
-              color: #ccc;        
+              font-size: 11px;
+              color: #ccc;
+              i{
+                margin-right: 2px;
+              }     
             }
             .more{
               position: absolute;
@@ -336,8 +341,11 @@ button{
             padding: 12px;
             font-size: 20px;
             .sub{
-              font-size: 10px;
-              color: #ccc;        
+              font-size: 11px;
+              color: #ccc;
+              i{
+                margin-right: 2px;
+              }     
             }
             .more{
               position: absolute;

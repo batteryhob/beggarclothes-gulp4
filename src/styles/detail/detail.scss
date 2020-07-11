@@ -129,7 +129,7 @@ button{
       min-width: 320px;
       .content-detail{
         position: relative;
-        margin-bottom: 300px;
+        margin-bottom: 150px;
         .imgs{
           .wrapper{
             ul{
@@ -314,6 +314,27 @@ button{
               margin-right: 5px;
             }
           }
+        }
+      }
+      .content-comment{
+        padding: 20px;   
+        .title{
+          font-size: 20px;
+        }
+        .comment{
+          margin-top: 20px;
+          .desc{
+            margin-top: 10px;
+            font-size: 14px;
+          }
+        }
+        .graph{
+          margin-top: 20px;
+          //font-size: 14px;    
+        }
+        .review{
+          margin-top: 20px;
+          //font-size: 14px;  
         }
       }
     }

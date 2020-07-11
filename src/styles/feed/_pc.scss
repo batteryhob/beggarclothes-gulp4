@@ -44,6 +44,18 @@
   main {
     section{      
       .content{
+        .content-designer {
+          .wrapper{
+            max-width: 1280px;
+            padding: 20px;
+            margin-left: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            .rect{
+              width: 60%;
+            }
+          }
+        }
         .content-feed{
           max-width: 1280px;
           margin: 0 auto;
