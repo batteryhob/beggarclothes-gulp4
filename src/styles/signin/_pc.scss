@@ -1,0 +1,84 @@
+/* app.sass */
+@media only screen  and (min-width : 769px) {
+
+  .mobile {
+    display: none;
+  }
+  
+  .desktop {
+    display: block;
+  }
+
+  header {
+    $headersize: 22px;
+    .alert {
+      .left {
+        left: 100px;
+      }
+      .right{
+        right: 100px;
+      }
+    }
+    .content {
+      padding: 18px 12px;     
+      .left{
+        height: $headersize;
+        line-height: $headersize;        
+      }
+      .logo{
+        text-align: left;        
+        margin-left: 100px;
+        img{
+          margin: initial;
+          height: $headersize;
+        }
+      }
+      .right{
+        height: $headersize;
+        line-height: $headersize;
+        margin-right: 100px;
+      }
+    }
+  }
+
+  main {
+    section{      
+      .content{
+        .content-designer {
+          .wrapper{
+            max-width: 1280px;
+            padding: 20px;
+            margin-left: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            .rect{
+              width: 60%;
+            }
+          }
+        }
+        .content-feed{
+          max-width: 1280px;
+          margin: 0 auto;
+          margin-top: 50px;
+          .feedlist{
+            ul{
+              li{
+                width: 25%;
+                .feed{
+                  .thumbnail{
+                    height: 300px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 18px 100px;    
+  }
+}
+

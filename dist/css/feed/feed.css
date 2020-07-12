@@ -326,10 +326,10 @@ button {
         left: 0px;
         bottom: 0px; }
         #feed main section .content-designer .wrapper .rect {
+          position: relative;
           box-sizing: border-box;
           padding: 20px;
-          background-color: #000;
-          opacity: .5;
+          background: rgba(0, 0, 0, 0.4);
           color: #fff; }
           #feed main section .content-designer .wrapper .rect p {
             font-size: 20px; }
@@ -341,6 +341,56 @@ button {
           #feed main section .content-designer .wrapper .rect .sub {
             margin-top: 10px;
             font-size: 12px; }
+          #feed main section .content-designer .wrapper .rect .toggle {
+            opacity: 1;
+            position: absolute;
+            top: 25px;
+            right: 20px; }
+            #feed main section .content-designer .wrapper .rect .toggle .tgl {
+              display: none; }
+              #feed main section .content-designer .wrapper .rect .toggle .tgl, #feed main section .content-designer .wrapper .rect .toggle .tgl:after, #feed main section .content-designer .wrapper .rect .toggle .tgl:before,
+              #feed main section .content-designer .wrapper .rect .toggle .tgl *,
+              #feed main section .content-designer .wrapper .rect .toggle .tgl *:after,
+              #feed main section .content-designer .wrapper .rect .toggle .tgl *:before,
+              #feed main section .content-designer .wrapper .rect .toggle .tgl + .tgl-btn {
+                box-sizing: border-box; }
+                #feed main section .content-designer .wrapper .rect .toggle .tgl::selection, #feed main section .content-designer .wrapper .rect .toggle .tgl:after::selection, #feed main section .content-designer .wrapper .rect .toggle .tgl:before::selection,
+                #feed main section .content-designer .wrapper .rect .toggle .tgl *::selection,
+                #feed main section .content-designer .wrapper .rect .toggle .tgl *:after::selection,
+                #feed main section .content-designer .wrapper .rect .toggle .tgl *:before::selection,
+                #feed main section .content-designer .wrapper .rect .toggle .tgl + .tgl-btn::selection {
+                  background: none; }
+              #feed main section .content-designer .wrapper .rect .toggle .tgl + .tgl-btn {
+                outline: 0;
+                display: block;
+                width: 4em;
+                height: 2em;
+                position: relative;
+                cursor: pointer;
+                user-select: none; }
+                #feed main section .content-designer .wrapper .rect .toggle .tgl + .tgl-btn:after, #feed main section .content-designer .wrapper .rect .toggle .tgl + .tgl-btn:before {
+                  position: relative;
+                  display: block;
+                  content: "";
+                  width: 50%;
+                  height: 100%; }
+                #feed main section .content-designer .wrapper .rect .toggle .tgl + .tgl-btn:after {
+                  left: 0; }
+                #feed main section .content-designer .wrapper .rect .toggle .tgl + .tgl-btn:before {
+                  display: none; }
+              #feed main section .content-designer .wrapper .rect .toggle .tgl:checked + .tgl-btn:after {
+                left: 50%; }
+            #feed main section .content-designer .wrapper .rect .toggle .tgl-light + .tgl-btn {
+              background: #f0f0f0;
+              border-radius: 2em;
+              padding: 2px;
+              transition: all .4s ease; }
+              #feed main section .content-designer .wrapper .rect .toggle .tgl-light + .tgl-btn:after {
+                border-radius: 50%;
+                background: #fff;
+                transition: all .2s ease; }
+            #feed main section .content-designer .wrapper .rect .toggle .tgl-light:checked + .tgl-btn {
+              background: #47cf73; }
     #feed main section .content-feed .feedlist {
       padding: 12px; }
       #feed main section .content-feed .feedlist .title {
@@ -350,9 +400,11 @@ button {
         #feed main section .content-feed .feedlist .title p {
           font-size: 20px;
           z-index: 2; }
-          #feed main section .content-feed .feedlist .title p.sub {
-            font-size: 12px;
-            color: #ccc; }
+        #feed main section .content-feed .feedlist .title span {
+          display: inline-block;
+          width: 50px;
+          height: 2px;
+          background-color: #000; }
       #feed main section .content-feed .feedlist ul {
         display: flex;
         flex-wrap: wrap;
