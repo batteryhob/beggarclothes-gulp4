@@ -536,14 +536,84 @@ button {
       #detail main section .content-comment .title {
         font-size: 20px; }
       #detail main section .content-comment .comment {
-        margin-top: 20px; }
+        margin-top: 40px; }
         #detail main section .content-comment .comment .desc {
           margin-top: 10px;
           font-size: 14px; }
       #detail main section .content-comment .graph {
-        margin-top: 20px; }
+        margin-top: 40px; }
+        #detail main section .content-comment .graph .circles {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap; }
+          #detail main section .content-comment .graph .circles .wrapper {
+            position: relative;
+            min-width: 50%;
+            max-width: 50%;
+            padding: 10px;
+            box-sizing: border-box; }
+            #detail main section .content-comment .graph .circles .wrapper svg {
+              height: 100%;
+              transform: rotate(-90deg);
+              width: 100%; }
+            #detail main section .content-comment .graph .circles .wrapper .progress-bar__background {
+              fill: none;
+              stroke: #e2eff0;
+              stroke-width: 1.8; }
+            #detail main section .content-comment .graph .circles .wrapper .progress-bar__progress {
+              fill: none;
+              stroke: #e2eff0;
+              stroke: #78bec7;
+              stroke-dasharray: 100 100;
+              stroke-dashoffset: 100;
+              stroke-linecap: round;
+              stroke-width: 1.8;
+              transition: stroke-dashoffset 1s ease-in-out; }
       #detail main section .content-comment .review {
-        margin-top: 20px; }
+        margin-top: 40px; }
+        #detail main section .content-comment .review ul {
+          display: flex;
+          overflow-x: scroll;
+          padding: 20px; }
+          #detail main section .content-comment .review ul li {
+            min-width: 300px;
+            margin-right: 20px;
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2); }
+            #detail main section .content-comment .review ul li .wrapper {
+              position: relative;
+              width: 100%;
+              height: 200px;
+              overflow: hidden;
+              border-radius: 10px; }
+              #detail main section .content-comment .review ul li .wrapper img {
+                width: 100%; }
+              #detail main section .content-comment .review ul li .wrapper .desc {
+                position: absolute;
+                width: 100%;
+                left: 0px;
+                bottom: 0px;
+                background-color: #fff;
+                box-sizing: border-box;
+                padding: 12px; }
+                #detail main section .content-comment .review ul li .wrapper .desc .social {
+                  width: 30px;
+                  height: 30px;
+                  position: absolute;
+                  top: -30px;
+                  left: 0px; }
+                #detail main section .content-comment .review ul li .wrapper .desc .subject {
+                  font-size: 14px; }
+                #detail main section .content-comment .review ul li .wrapper .desc .content {
+                  height: 0px;
+                  overflow: hidden;
+                  transition: all .2s ease-in; }
+                #detail main section .content-comment .review ul li .wrapper .desc .link {
+                  margin-top: 10px;
+                  font-size: 10px; }
+                  #detail main section .content-comment .review ul li .wrapper .desc .link i {
+                    margin-left: 2px; }
+              #detail main section .content-comment .review ul li .wrapper:hover .desc .content {
+                height: 50px; }
   #detail footer {
     width: 100%;
     padding: 18px 12px;
@@ -612,5 +682,8 @@ button {
     #detail main section .content-comment {
       max-width: 1000px;
       margin: 0 auto; }
+      #detail main section .content-comment .graph .circles .wrapper {
+        min-width: 25%;
+        max-width: 25%; }
     #detail footer {
       padding: 18px 100px; } }

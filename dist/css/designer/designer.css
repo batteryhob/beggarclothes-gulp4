@@ -242,17 +242,17 @@ button {
 .desktop {
   display: none; }
 
-#feed {
+#designer {
   background-color: #fff;
   overflow-x: hidden;
   overflow-y: hidden;
   /* app.sass */ }
-  #feed header {
+  #designer header {
     position: relative;
     min-width: 320px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     z-index: 999; }
-    #feed header .alert {
+    #designer header .alert {
       position: relative;
       height: 40px;
       line-height: 40px;
@@ -260,202 +260,131 @@ button {
       text-align: center;
       font-size: 1.2rem;
       color: #fff; }
-      #feed header .alert .left {
+      #designer header .alert .left {
         position: absolute;
         top: 15px;
         left: 10px;
         transition: all .2s ease-in; }
-        #feed header .alert .left:hover {
+        #designer header .alert .left:hover {
           color: #666; }
-      #feed header .alert .list {
+      #designer header .alert .list {
         display: flex;
         transition: all .2s ease-in; }
-        #feed header .alert .list li {
+        #designer header .alert .list li {
           min-width: 100%; }
-        #feed header .alert .list.step2 {
+        #designer header .alert .list.step2 {
           transform: translate(-100%); }
-        #feed header .alert .list.step3 {
+        #designer header .alert .list.step3 {
           transform: translate(-200%); }
-      #feed header .alert .right {
+      #designer header .alert .right {
         position: absolute;
         top: 15px;
         right: 10px;
         transition: all .2s ease-in; }
-        #feed header .alert .right:hover {
+        #designer header .alert .right:hover {
           color: #666; }
-    #feed header .content {
+    #designer header .content {
       display: flex;
       padding: 18px 12px;
       text-align: center; }
-      #feed header .content .left {
+      #designer header .content .left {
         flex: 1;
         text-align: left;
         height: 42px;
         line-height: 42px;
         transition: all .2s ease-in; }
-        #feed header .content .left i {
+        #designer header .content .left i {
           font-size: 1.6rem;
           color: #999; }
-      #feed header .content .logo {
+      #designer header .content .logo {
         flex: 1;
         transition: all .2s ease-in; }
-        #feed header .content .logo img {
+        #designer header .content .logo img {
           height: 42px;
           margin: 0 auto; }
-      #feed header .content .right {
+      #designer header .content .right {
         flex: 1;
         text-align: right;
         height: 42px;
         line-height: 42px;
         transition: all .2s ease-in; }
-        #feed header .content .right i {
+        #designer header .content .right i {
           font-size: 1.6rem;
           color: #999;
           margin-left: 5px; }
-  #feed main section {
+  #designer main section {
+    position: relative;
     min-width: 320px; }
-    #feed main section .content-designer {
-      position: relative;
-      height: 400px;
-      overflow: hidden; }
-      #feed main section .content-designer img {
-        width: 100%; }
-      #feed main section .content-designer .wrapper {
-        position: absolute;
-        width: 100%;
-        left: 0px;
-        bottom: 0px; }
-        #feed main section .content-designer .wrapper .rect {
-          box-sizing: border-box;
-          padding: 20px;
-          background-color: #000;
-          opacity: .5;
-          color: #fff; }
-          #feed main section .content-designer .wrapper .rect p {
-            font-size: 20px; }
-          #feed main section .content-designer .wrapper .rect .line {
-            display: inline-block;
-            width: 20%;
-            height: 3px;
-            background-color: #fff; }
-          #feed main section .content-designer .wrapper .rect .sub {
-            margin-top: 10px;
-            font-size: 12px; }
-    #feed main section .content-feed .feedlist {
-      padding: 12px; }
-      #feed main section .content-feed .feedlist .title {
-        position: relative;
-        margin-top: 20px;
-        text-align: center; }
-        #feed main section .content-feed .feedlist .title p {
-          font-size: 20px;
-          z-index: 2; }
-          #feed main section .content-feed .feedlist .title p.sub {
-            font-size: 12px;
-            color: #ccc; }
-      #feed main section .content-feed .feedlist ul {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: -1.2rem;
-        margin-right: -1.2rem; }
-        #feed main section .content-feed .feedlist ul li {
-          width: 50%;
-          box-sizing: border-box;
-          margin-top: 20px;
-          margin-bottom: 20px; }
-          #feed main section .content-feed .feedlist ul li .feed {
-            padding: 12px;
-            text-align: center; }
-            #feed main section .content-feed .feedlist ul li .feed .thumbnail {
-              width: 100%;
-              height: 200px;
-              overflow: hidden; }
-              #feed main section .content-feed .feedlist ul li .feed .thumbnail img {
-                width: 100%; }
-            #feed main section .content-feed .feedlist ul li .feed .desc {
-              margin-top: 10px; }
-              #feed main section .content-feed .feedlist ul li .feed .desc .designer {
-                font-size: 12px;
-                display: inline-block;
-                font-size: 12px;
-                padding: 1px 10px;
-                border: 1px solid #333; }
-              #feed main section .content-feed .feedlist ul li .feed .desc .name {
-                margin-top: 5px;
-                max-width: 100%;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                font-size: 13px;
-                line-height: 133%;
-                color: #292929; }
-              #feed main section .content-feed .feedlist ul li .feed .desc .price {
-                line-height: 23px;
-                font-size: 13px;
-                color: #666; }
-  #feed footer {
+  #designer footer {
     width: 100%;
     padding: 18px 12px;
     font-size: 12px;
     background-color: #222;
     transition: all .2s ease-in; }
-    #feed footer .wrapper {
+    #designer footer .wrapper {
       height: 400px;
       color: #aaa; }
-      #feed footer .wrapper .logo img {
+      #designer footer .wrapper .logo img {
         width: 100px; }
-      #feed footer .wrapper .policy {
+      #designer footer .wrapper .policy {
         margin-top: 10px;
         padding: 5px;
         border-bottom: 1px solid #aaa; }
-        #feed footer .wrapper .policy ul li {
+        #designer footer .wrapper .policy ul li {
           margin-bottom: 5px; }
-          #feed footer .wrapper .policy ul li span {
+          #designer footer .wrapper .policy ul li span {
             cursor: pointer;
             transition: all .2s ease-in; }
-            #feed footer .wrapper .policy ul li span:hover {
+            #designer footer .wrapper .policy ul li span:hover {
               border-bottom: 1px solid #aaa; }
-      #feed footer .wrapper .copy {
+      #designer footer .wrapper .copy {
         margin-top: 5px; }
   @media only screen and (min-width: 769px) {
-    #feed .mobile {
+    #designer .mobile {
       display: none; }
-    #feed .desktop {
+    #designer .desktop {
       display: block; }
-    #feed header .alert .left {
+    #designer header .alert .left {
       left: 100px; }
-    #feed header .alert .right {
+    #designer header .alert .right {
       right: 100px; }
-    #feed header .content {
+    #designer header .content {
       padding: 18px 12px; }
-      #feed header .content .left {
+      #designer header .content .left {
         height: 22px;
         line-height: 22px; }
-      #feed header .content .logo {
+      #designer header .content .logo {
         text-align: left;
         margin-left: 100px; }
-        #feed header .content .logo img {
+        #designer header .content .logo img {
           margin: initial;
           height: 22px; }
-      #feed header .content .right {
+      #designer header .content .right {
         height: 22px;
         line-height: 22px;
         margin-right: 100px; }
-    #feed main section .content .content-designer .wrapper {
+    #designer main section .content-detail {
       max-width: 1280px;
-      padding: 20px;
-      margin-left: 12px;
-      left: 50%;
-      transform: translateX(-50%); }
-      #feed main section .content .content-designer .wrapper .rect {
-        width: 60%; }
-    #feed main section .content .content-feed {
-      max-width: 1280px;
-      margin: 0 auto;
-      margin-top: 50px; }
-      #feed main section .content .content-feed .feedlist ul li {
-        width: 25%; }
-        #feed main section .content .content-feed .feedlist ul li .feed .thumbnail {
-          height: 300px; }
-    #feed footer {
+      margin: 0 auto; }
+      #designer main section .content-detail .imgs {
+        margin-left: 50px; }
+        #designer main section .content-detail .imgs .wrapper {
+          width: 70%; }
+          #designer main section .content-detail .imgs .wrapper ul li {
+            display: inline;
+            min-width: 100%; }
+            #designer main section .content-detail .imgs .wrapper ul li div {
+              height: 600px; }
+      #designer main section .content-detail .desc {
+        left: initial;
+        right: 50px;
+        bottom: 100px;
+        background-color: #FFF; }
+    #designer main section .content-comment {
+      max-width: 1000px;
+      margin: 0 auto; }
+      #designer main section .content-comment .graph .circles .wrapper {
+        min-width: 25%;
+        max-width: 25%; }
+    #designer footer {
       padding: 18px 100px; } }
