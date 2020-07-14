@@ -493,18 +493,19 @@ button {
         height: 22px;
         line-height: 22px;
         margin-right: 100px; }
-    #feed main section .content .content-designer .wrapper {
-      max-width: 1280px;
-      padding: 20px;
-      margin-left: 12px;
-      left: 50%;
-      transform: translateX(-50%); }
-      #feed main section .content .content-designer .wrapper .rect {
-        width: 60%; }
+    #feed main section .content .content-designer {
+      height: 500px; }
+      #feed main section .content .content-designer .wrapper {
+        max-width: 1280px;
+        padding: 20px;
+        margin-left: 12px;
+        left: 50%;
+        transform: translateX(-50%); }
+        #feed main section .content .content-designer .wrapper .rect {
+          width: 60%; }
     #feed main section .content .content-feed {
       max-width: 1280px;
-      margin: 0 auto;
-      margin-top: 50px; }
+      margin: 0 auto; }
       #feed main section .content .content-feed .feedlist ul li {
         width: 25%; }
         #feed main section .content .content-feed .feedlist ul li .feed .thumbnail {

@@ -12,9 +12,12 @@
     <link rel="stylesheet" href="./css/sprite.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <script>
-
-    </script>
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--iscroll-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    
     <style>
 
     </style>
@@ -69,14 +72,14 @@
                     <div class="content">
                         <div class="content-detail">
                             <div class="imgs">
-                                <div class="wrapper">
-                                    <ul>
-                                        <li>
+                                <div class="wrapper swiper-container">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
                                             <div>
                                                 <img src="https://www.sotostore.com/images/61944/large.jpg" alt="웨일자켓">
                                             </div>
                                         </li>
-                                        <li>
+                                        <li class="swiper-slide">
                                             <div>
                                                 <img src="/img/sample3.png" alt="웨일자켓">
                                             </div>
@@ -144,6 +147,9 @@
                                     </label>
                                 </div>
                             </div>
+                            <div class="pagination">
+                                <div class="swiper-pagination"></div>
+                            </div>  
                         </div>
                         <div class="content-comment">
                             <div class="comment">
@@ -210,77 +216,81 @@
                             </div>
                             <div class="review">
                                 <p class="title">리뷰</p>
-                                <ul>
-                                    
-                                    <li>
-                                        <div class="wrapper">
-                                            <img src="/img/sample3.png" alt="">
-                                            <div class="desc">
-                                                <img class="social" src="/img/naver.png" alt="">
-                                                <p class="subject">제목제목제목</p>
-                                                <div class="content">
-                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum repellat tenetur inventore, ex ratione ullam eos nulla ad eaque enim obcaecati esse vero aliquam voluptate sed qui? Pariatur, reiciendis ullam!
+                                <div class="reviews iscroll-container" id="reviews">
+                                    <div class="scroller">
+                                        <ul class="clearfix">
+                                            
+                                            <li>
+                                                <div class="wrapper">
+                                                    <img src="/img/sample3.png" alt="">
+                                                    <div class="desc">
+                                                        <img class="social" src="/img/naver.png" alt="">
+                                                        <p class="subject">제목제목제목</p>
+                                                        <div class="content">
+                                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum repellat tenetur inventore, ex ratione ullam eos nulla ad eaque enim obcaecati esse vero aliquam voluptate sed qui? Pariatur, reiciendis ullam!
+                                                        </div>
+                                                        <p class="link">
+                                                            View Review
+                                                            <i class="fas fa-chevron-right right"></i>
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                                <p class="link">
-                                                    View Review
-                                                    <i class="fas fa-chevron-right right"></i>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    
-                                    <li>
-                                        <div class="wrapper">
-                                            <img src="/img/sample3.png" alt="">
-                                            <div class="desc">
-                                                <img class="social" src="/img/naver.png" alt="">
-                                                <p class="subject">제목제목제목</p>
-                                                <div class="content">
-                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum repellat tenetur inventore, ex ratione ullam eos nulla ad eaque enim obcaecati esse vero aliquam voluptate sed qui? Pariatur, reiciendis ullam!
+                                            </li>
+                                            
+                                            <li>
+                                                <div class="wrapper">
+                                                    <img src="/img/sample3.png" alt="">
+                                                    <div class="desc">
+                                                        <img class="social" src="/img/naver.png" alt="">
+                                                        <p class="subject">제목제목제목</p>
+                                                        <div class="content">
+                                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum repellat tenetur inventore, ex ratione ullam eos nulla ad eaque enim obcaecati esse vero aliquam voluptate sed qui? Pariatur, reiciendis ullam!
+                                                        </div>
+                                                        <p class="link">
+                                                            View Review
+                                                            <i class="fas fa-chevron-right right"></i>
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                                <p class="link">
-                                                    View Review
-                                                    <i class="fas fa-chevron-right right"></i>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    
-                                    <li>
-                                        <div class="wrapper">
-                                            <img src="/img/sample3.png" alt="">
-                                            <div class="desc">
-                                                <img class="social" src="/img/naver.png" alt="">
-                                                <p class="subject">제목제목제목</p>
-                                                <div class="content">
-                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum repellat tenetur inventore, ex ratione ullam eos nulla ad eaque enim obcaecati esse vero aliquam voluptate sed qui? Pariatur, reiciendis ullam!
+                                            </li>
+                                            
+                                            <li>
+                                                <div class="wrapper">
+                                                    <img src="/img/sample3.png" alt="">
+                                                    <div class="desc">
+                                                        <img class="social" src="/img/naver.png" alt="">
+                                                        <p class="subject">제목제목제목</p>
+                                                        <div class="content">
+                                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum repellat tenetur inventore, ex ratione ullam eos nulla ad eaque enim obcaecati esse vero aliquam voluptate sed qui? Pariatur, reiciendis ullam!
+                                                        </div>
+                                                        <p class="link">
+                                                            View Review
+                                                            <i class="fas fa-chevron-right right"></i>
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                                <p class="link">
-                                                    View Review
-                                                    <i class="fas fa-chevron-right right"></i>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    
-                                    <li>
-                                        <div class="wrapper">
-                                            <img src="/img/sample3.png" alt="">
-                                            <div class="desc">
-                                                <img class="social" src="/img/naver.png" alt="">
-                                                <p class="subject">제목제목제목</p>
-                                                <div class="content">
-                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum repellat tenetur inventore, ex ratione ullam eos nulla ad eaque enim obcaecati esse vero aliquam voluptate sed qui? Pariatur, reiciendis ullam!
+                                            </li>
+                                            
+                                            <li>
+                                                <div class="wrapper">
+                                                    <img src="/img/sample3.png" alt="">
+                                                    <div class="desc">
+                                                        <img class="social" src="/img/naver.png" alt="">
+                                                        <p class="subject">제목제목제목</p>
+                                                        <div class="content">
+                                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum repellat tenetur inventore, ex ratione ullam eos nulla ad eaque enim obcaecati esse vero aliquam voluptate sed qui? Pariatur, reiciendis ullam!
+                                                        </div>
+                                                        <p class="link">
+                                                            View Review
+                                                            <i class="fas fa-chevron-right right"></i>
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                                <p class="link">
-                                                    View Review
-                                                    <i class="fas fa-chevron-right right"></i>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    
-                                </ul>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -313,6 +323,54 @@
 
         </div>
     </div>
+    <script>
+
+        (function(){
+
+            var example_1_li_widths = $('#reviews > .scroller > ul > li').outerWidth();
+            var example_1_num_elements = $('#reviews > .scroller > ul > li').length;
+            $('#reviews > .scroller').width( example_1_li_widths * example_1_num_elements );
+
+
+            var myScroll = new IScroll('#reviews', {
+                scrollX: true,
+                scrollY: false,
+                // momentum: false,
+                snap: true,
+                snapSpeed: 400,
+                keyBindings: true,
+                mouseWheel: true,
+                disablePointer: true,
+                disableTouch: false,
+                disableMouse: false
+            });
+
+            //swiper
+            var mySwiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                //direction: 'vertical',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                // scrollbar: {
+                //     el: '.swiper-scrollbar',
+                // },
+            });
+
+        })()
+
+    </script>
 
 
 </body>

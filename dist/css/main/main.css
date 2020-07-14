@@ -317,49 +317,58 @@ button {
     min-width: 320px; }
     #main main section .content {
       margin-bottom: 150px; }
-      #main main section .content .content-main ul {
-        display: flex;
-        overflow-x: scroll;
-        overflow-y: hidden; }
-        #main main section .content .content-main ul li {
-          flex: 1;
-          min-width: 100vw; }
-          #main main section .content .content-main ul li .feature {
-            position: relative;
-            background-color: #eee;
-            height: 500px; }
-            #main main section .content .content-main ul li .feature img {
-              width: 100%;
-              min-width: 320px;
-              max-width: 400px;
-              height: auto;
-              transition: all .2s ease-in; }
-            #main main section .content .content-main ul li .feature .desc {
-              position: absolute;
-              width: 250px;
-              right: 0px;
-              bottom: 30px;
-              background-color: #fff;
-              padding: 20px 20px;
-              box-sizing: border-box;
-              transition: all .2s ease-in;
-              box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2); }
-              #main main section .content .content-main ul li .feature .desc p {
-                font-size: 20px;
-                margin-bottom: 10px; }
-                #main main section .content .content-main ul li .feature .desc p.sub {
-                  display: inline-block;
-                  width: 80%;
-                  font-size: 12px; }
-              #main main section .content .content-main ul li .feature .desc button {
-                display: inline-block;
-                padding: 0px;
-                text-align: left;
-                box-sizing: border-box;
-                border-bottom: 1px solid #fff;
-                transition: all .2s ease-in; }
-                #main main section .content .content-main ul li .feature .desc button:hover {
-                  border-bottom: 1px solid #ccc; }
+      #main main section .content .content-main ul li .feature {
+        width: 100%;
+        position: relative;
+        background-color: #eee;
+        height: 500px; }
+        #main main section .content .content-main ul li .feature img {
+          width: 100%;
+          min-width: 320px;
+          max-width: 400px;
+          height: auto;
+          transition: all .2s ease-in; }
+        #main main section .content .content-main ul li .feature .desc {
+          position: absolute;
+          width: 250px;
+          right: 0px;
+          bottom: 30px;
+          background-color: #fff;
+          padding: 20px 20px;
+          box-sizing: border-box;
+          transition: all .2s ease-in;
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2); }
+          #main main section .content .content-main ul li .feature .desc p {
+            font-size: 20px;
+            margin-bottom: 10px; }
+            #main main section .content .content-main ul li .feature .desc p.sub {
+              display: inline-block;
+              width: 80%;
+              font-size: 12px; }
+          #main main section .content .content-main ul li .feature .desc button {
+            display: inline-block;
+            padding: 0px;
+            text-align: left;
+            box-sizing: border-box;
+            border-bottom: 1px solid #fff;
+            transition: all .2s ease-in; }
+            #main main section .content .content-main ul li .feature .desc button:hover {
+              border-bottom: 1px solid #ccc; }
+      #main main section .content .content-main .swiper-button-prev:after, #main main section .content .content-main .swiper-button-next:after {
+        color: #000;
+        opacity: .2; }
+      #main main section .content .content-main .pagination {
+        height: 50px;
+        line-height: 50px; }
+        #main main section .content .content-main .pagination .swiper-pagination {
+          width: 100%;
+          margin: 0 auto; }
+          #main main section .content .content-main .pagination .swiper-pagination .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            margin-right: 5px; }
+            #main main section .content .content-main .pagination .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+              background-color: #000 !important; }
       #main main section .content .content-tags {
         margin-top: 50px; }
         #main main section .content .content-tags .title {
@@ -433,44 +442,49 @@ button {
               background-color: #000;
               border-color: #000;
               color: #fff; }
-        #main main section .content .content-sub .feeds ul {
-          display: flex;
-          padding: 12px;
-          overflow-x: scroll; }
-          #main main section .content .content-sub .feeds ul li {
-            flex: 1;
-            max-width: 160px;
-            margin-right: 20px; }
-            #main main section .content .content-sub .feeds ul li .feed .thumbnail {
-              width: 160px;
-              height: 200px;
-              overflow: hidden; }
-              #main main section .content .content-sub .feeds ul li .feed .thumbnail img {
-                width: 100%; }
-            #main main section .content .content-sub .feeds ul li .feed .desc {
-              margin-top: 10px; }
-              #main main section .content .content-sub .feeds ul li .feed .desc .designer {
-                font-size: 13px; }
-              #main main section .content .content-sub .feeds ul li .feed .desc .name {
-                margin-top: 5px;
-                max-width: 100%;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                font-size: 13px;
-                line-height: 133%;
-                color: #292929; }
-              #main main section .content .content-sub .feeds ul li .feed .desc .price {
-                line-height: 23px;
-                font-size: 13px;
-                color: #666; }
-              #main main section .content .content-sub .feeds ul li .feed .desc .interactive {
-                margin-top: 5px; }
-                #main main section .content .content-sub .feeds ul li .feed .desc .interactive span {
-                  font-size: 12px;
-                  margin-right: 5px; }
-                  #main main section .content .content-sub .feeds ul li .feed .desc .interactive span i {
-                    margin-right: 2px; }
+        #main main section .content .content-sub .feeds {
+          width: 100%;
+          overflow: hidden; }
+          #main main section .content .content-sub .feeds .clearfix:after {
+            content: "";
+            display: table;
+            clear: both; }
+          #main main section .content .content-sub .feeds .scroller ul li {
+            float: left;
+            box-sizing: border-box;
+            max-width: 180px; }
+            #main main section .content .content-sub .feeds .scroller ul li .feed {
+              padding: 20px; }
+              #main main section .content .content-sub .feeds .scroller ul li .feed .thumbnail {
+                width: 160px;
+                height: 200px;
+                overflow: hidden; }
+                #main main section .content .content-sub .feeds .scroller ul li .feed .thumbnail img {
+                  width: 100%; }
+              #main main section .content .content-sub .feeds .scroller ul li .feed .desc {
+                margin-top: 10px; }
+                #main main section .content .content-sub .feeds .scroller ul li .feed .desc .designer {
+                  font-size: 13px; }
+                #main main section .content .content-sub .feeds .scroller ul li .feed .desc .name {
+                  margin-top: 5px;
+                  max-width: 100%;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  font-size: 13px;
+                  line-height: 133%;
+                  color: #292929; }
+                #main main section .content .content-sub .feeds .scroller ul li .feed .desc .price {
+                  line-height: 23px;
+                  font-size: 13px;
+                  color: #666; }
+                #main main section .content .content-sub .feeds .scroller ul li .feed .desc .interactive {
+                  margin-top: 5px; }
+                  #main main section .content .content-sub .feeds .scroller ul li .feed .desc .interactive span {
+                    font-size: 12px;
+                    margin-right: 5px; }
+                    #main main section .content .content-sub .feeds .scroller ul li .feed .desc .interactive span i {
+                      margin-right: 2px; }
       #main main section .content .content-sale {
         margin-top: 50px; }
         #main main section .content .content-sale .title {

@@ -67,9 +67,15 @@
           bottom: 100px;      
           background-color: #FFF;    
         }
+        .pagination{   
+          .swiper-pagination{
+            text-align: left;
+            padding-left: 70px;
+          }
+        }
       }
       .content-comment{
-        max-width: 1000px;
+        max-width: 1100px;
         margin: 0 auto;
         .graph{
           .circles{
