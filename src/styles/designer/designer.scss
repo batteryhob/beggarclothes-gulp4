@@ -5,14 +5,9 @@
 
 @import '../sprite/css/svg';
 
-$color-backgroundgray : #f7f7f7;
-$color-black : #000;
-$color-darkgray : #666666;
-$color-coolgray : #999999;
-$color-lightgray : #f6f6f6;
-$color-skyblue: #23b9ff;
-$color-yellow: #ffc95e;
-$color-pink: #fd446e;
+$color-black : #222;
+$color-red: rgb(226, 38, 77);
+$color-blue: #0077ff;
 
 html {
   width: 100%;
@@ -132,6 +127,7 @@ button{
           .title{
             position: relative;
             margin-top: 4.8rem;
+            margin-bottom: 4.8rem;
             text-align: center;
             p{
               font-family: "Apple SD Gothic Neo";
@@ -146,8 +142,6 @@ button{
             }
           }
           .boards{
-            padding-top: 30px;
-            padding-bottom: 30px;
             overflow: hidden;         
             .communitys {       
               &.clearfix:after {
@@ -158,8 +152,8 @@ button{
               .community {
                 float: left;
                 box-sizing: border-box;
-                width: 300px;        
-                padding: 20px 10px;        
+                width: 280px;        
+                padding: 20px 14px;        
                 .board{
                   position: relative;
                   box-sizing: border-box;
@@ -168,9 +162,56 @@ button{
                   overflow: hidden;
                   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
                   .name {
-                    font-family: "Apple SD Gothic Neo";
-                    font-size: 2.4rem;
-                    text-align: center;
+                    font-size: 2.0rem;
+                    font-weight: 700;
+                    line-height: 2.0rem;
+                    text-align: center;    
+                    margin-top: 20px;
+                    margin-bottom: 20px;     
+                    cursor: pointer;           
+                    img{
+                      vertical-align: top;
+                      width: 20px;
+                      height: 20px;
+                      border-radius: 10px;
+                      background-color: #fff;
+                      margin-left: 5px;
+                    }
+                    span{
+                      display: inline-block;
+                      width: 30px;
+                      height: 1px;
+                      background-color: #ccc
+                    }
+                  }
+                  ul{
+                    box-sizing: border-box;
+                    padding: 12px;
+                    .keyword{
+                        display: flex;
+                        margin-bottom: 3px;
+                        box-sizing: border-box;
+                        padding: 7px;
+                        font-size: 1.4rem;
+                        text-align: center;
+                        transition: all .1s ease-in;
+                        border: 1px solid transparent;   
+                        color: #666;                        
+                        .rank{                         
+                          flex: 1;
+                          margin-right: 10px;
+                          font-family: "Apple SD Gothic Neo";   
+                        }
+                        .designer{
+                          flex: 2.5;
+                          text-align: left;
+                        }
+                        cursor: pointer;
+                        &:hover{
+                          border: 1px solid $color-blue;
+                        }
+
+                    }
                   }
                 }
               }
