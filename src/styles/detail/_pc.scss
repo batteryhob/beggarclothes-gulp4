@@ -82,6 +82,14 @@
             .wrapper{
               min-width: 25%;
               max-width: 25%;
+              .pt{
+                .point{
+                  font-size: 3.6rem;
+                }
+                .sub{
+                  font-size: 2.0rem;
+                }
+              }
             }
           }
         }

@@ -2,6 +2,7 @@
 /* app.sass */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR");
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani");
+@import url("//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo");
 html,
 body,
 div,
@@ -166,6 +167,11 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
   display: none; }
 
 /* 구글 웹 폰트 적용 */
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  src: url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot");
+  src: url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff") format("woff"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.svg#Apple SD Gothic Neo") format("svg"); }
+
 /* 공통 스타일 */
 #popup {
   position: fixed;
@@ -176,7 +182,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   display: table;
-  font-family: "Noto Sans KR";
+  font-family: "Apple SD Gothic Neo";
   font-size: 16px;
   font-weight: 500; }
   #popup .wrapper {
@@ -315,6 +321,43 @@ button {
   #designer main section {
     position: relative;
     min-width: 320px; }
+    #designer main section .content .content-designer .title {
+      position: relative;
+      margin-top: 4.8rem;
+      text-align: center; }
+      #designer main section .content .content-designer .title p {
+        font-family: "Apple SD Gothic Neo";
+        font-size: 2.4rem;
+        z-index: 2; }
+      #designer main section .content .content-designer .title span {
+        display: inline-block;
+        width: 50px;
+        height: 2px;
+        background-color: #000; }
+    #designer main section .content .content-designer .boards {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      overflow: hidden; }
+      #designer main section .content .content-designer .boards .communitys.clearfix:after {
+        content: "";
+        display: table;
+        clear: both; }
+      #designer main section .content .content-designer .boards .communitys .community {
+        float: left;
+        box-sizing: border-box;
+        width: 300px;
+        padding: 20px 10px; }
+        #designer main section .content .content-designer .boards .communitys .community .board {
+          position: relative;
+          box-sizing: border-box;
+          padding: 20px 10px;
+          width: 100%;
+          overflow: hidden;
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2); }
+          #designer main section .content .content-designer .boards .communitys .community .board .name {
+            font-family: "Apple SD Gothic Neo";
+            font-size: 2.4rem;
+            text-align: center; }
   #designer footer {
     width: 100%;
     padding: 18px 12px;
@@ -363,28 +406,8 @@ button {
         height: 22px;
         line-height: 22px;
         margin-right: 100px; }
-    #designer main section .content-detail {
+    #designer main section .content {
       max-width: 1280px;
       margin: 0 auto; }
-      #designer main section .content-detail .imgs {
-        margin-left: 50px; }
-        #designer main section .content-detail .imgs .wrapper {
-          width: 70%; }
-          #designer main section .content-detail .imgs .wrapper ul li {
-            display: inline;
-            min-width: 100%; }
-            #designer main section .content-detail .imgs .wrapper ul li div {
-              height: 600px; }
-      #designer main section .content-detail .desc {
-        left: initial;
-        right: 50px;
-        bottom: 100px;
-        background-color: #FFF; }
-    #designer main section .content-comment {
-      max-width: 1000px;
-      margin: 0 auto; }
-      #designer main section .content-comment .graph .circles .wrapper {
-        min-width: 25%;
-        max-width: 25%; }
     #designer footer {
       padding: 18px 100px; } }

@@ -2,6 +2,7 @@
 /* app.sass */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR");
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani");
+@import url("//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo");
 html,
 body,
 div,
@@ -166,6 +167,11 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
   display: none; }
 
 /* 구글 웹 폰트 적용 */
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  src: url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot");
+  src: url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff") format("woff"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.svg#Apple SD Gothic Neo") format("svg"); }
+
 /* 공통 스타일 */
 #popup {
   position: fixed;
@@ -176,7 +182,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   display: table;
-  font-family: "Noto Sans KR";
+  font-family: "Apple SD Gothic Neo";
   font-size: 16px;
   font-weight: 500; }
   #popup .wrapper {
@@ -229,7 +235,7 @@ html {
   height: 100%;
   font-family: "Noto Sans KR";
   font-size: 10px;
-  font-weight: 500; }
+  font-weight: 300; }
 
 button {
   background-color: transparent;
@@ -320,7 +326,7 @@ button {
       #main main section .content .content-main ul li .feature {
         width: 100%;
         position: relative;
-        background-color: #eee;
+        background-color: #fff;
         height: 500px; }
         #main main section .content .content-main ul li .feature img {
           width: 100%;
@@ -330,7 +336,6 @@ button {
           transition: all .2s ease-in; }
         #main main section .content .content-main ul li .feature .desc {
           position: absolute;
-          width: 250px;
           right: 0px;
           bottom: 30px;
           background-color: #fff;
@@ -339,23 +344,35 @@ button {
           transition: all .2s ease-in;
           box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2); }
           #main main section .content .content-main ul li .feature .desc p {
-            font-size: 20px;
-            margin-bottom: 10px; }
+            margin-bottom: 10px;
+            font-family: "Apple SD Gothic Neo";
+            font-size: 2.6rem; }
             #main main section .content .content-main ul li .feature .desc p.sub {
               display: inline-block;
               width: 80%;
-              font-size: 12px; }
+              font-size: 1.4rem;
+              font-weight: 300;
+              font-family: initial; }
           #main main section .content .content-main ul li .feature .desc button {
             display: inline-block;
             padding: 0px;
             text-align: left;
             box-sizing: border-box;
             border-bottom: 1px solid #fff;
+            font-size: 14px;
             transition: all .2s ease-in; }
             #main main section .content .content-main ul li .feature .desc button:hover {
               border-bottom: 1px solid #ccc; }
+          #main main section .content .content-main ul li .feature .desc .rect {
+            position: absolute;
+            top: 10px;
+            left: -10px;
+            display: inline-block;
+            width: 30px;
+            height: 5px;
+            background-color: #222; }
       #main main section .content .content-main .swiper-button-prev:after, #main main section .content .content-main .swiper-button-next:after {
-        color: #000;
+        color: #222;
         opacity: .2; }
       #main main section .content .content-main .pagination {
         height: 50px;
@@ -368,13 +385,14 @@ button {
             height: 8px;
             margin-right: 5px; }
             #main main section .content .content-main .pagination .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-              background-color: #000 !important; }
+              background-color: #222 !important; }
       #main main section .content .content-tags {
         margin-top: 50px; }
         #main main section .content .content-tags .title {
           position: relative;
           padding: 12px;
-          font-size: 20px; }
+          font-size: 2.2rem;
+          font-family: "Apple SD Gothic Neo"; }
           #main main section .content .content-tags .title .sub {
             font-size: 11px;
             color: #ccc; }
@@ -382,22 +400,21 @@ button {
               margin-right: 2px; }
           #main main section .content .content-tags .title .more {
             position: absolute;
-            top: 20px;
+            top: 14px;
             right: 12px;
-            padding: 2px 10px;
-            font-size: 10px;
+            padding: 4px 15px;
+            font-size: 1.2rem;
             color: #ccc;
             border: 1px solid #ccc;
             cursor: pointer;
             transition: background-color .2s ease-in; }
             #main main section .content .content-tags .title .more:hover {
-              background-color: #000;
-              border-color: #000;
+              background-color: #222;
+              border-color: #222;
               color: #fff; }
         #main main section .content .content-tags .ranking ul {
-          padding: 12px;
-          font-size: 12px;
-          font-weight: 500; }
+          padding: 24px 12px;
+          font-size: 1.2rem; }
           #main main section .content .content-tags .ranking ul li {
             height: 50px; }
             #main main section .content .content-tags .ranking ul li .tag {
@@ -413,16 +430,50 @@ button {
                   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2); }
               #main main section .content .content-tags .ranking ul li .tag .rank {
                 width: 50px;
-                line-height: 50px; }
+                line-height: 50px;
+                font-size: 1.4rem;
+                font-family: "Apple SD Gothic Neo"; }
               #main main section .content .content-tags .ranking ul li .tag .desc {
                 text-align: left;
                 line-height: 25px; }
+                #main main section .content .content-tags .ranking ul li .tag .desc .name {
+                  font-family: "Apple SD Gothic Neo";
+                  font-size: 1.4rem; }
+                #main main section .content .content-tags .ranking ul li .tag .desc i {
+                  margin-left: 5px; }
+                  #main main section .content .content-tags .ranking ul li .tag .desc i.up {
+                    color: #0077ff;
+                    animation: slidedown 1.5s infinite; }
+                  #main main section .content .content-tags .ranking ul li .tag .desc i.down {
+                    color: #e2264d;
+                    animation: slideup 1.5s infinite; }
+
+@keyframes slideup {
+  0% {
+    transform: translate3d(0px, -3px, 0px);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: translate3d(0px, 3px, 0px);
+    opacity: 0; } }
+
+@keyframes slidedown {
+  0% {
+    transform: translate3d(0px, 3px, 0px);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: translate3d(0px, -3px, 0px);
+    opacity: 0; } }
       #main main section .content .content-sub {
         margin-top: 50px; }
         #main main section .content .content-sub .title {
           position: relative;
           padding: 12px;
-          font-size: 20px; }
+          font-size: 2.2rem;
+          font-family: "Apple SD Gothic Neo"; }
           #main main section .content .content-sub .title .sub {
             font-size: 11px;
             color: #ccc; }
@@ -430,17 +481,17 @@ button {
               margin-right: 2px; }
           #main main section .content .content-sub .title .more {
             position: absolute;
-            top: 20px;
+            top: 14px;
             right: 12px;
-            padding: 2px 10px;
-            font-size: 10px;
+            padding: 4px 15px;
+            font-size: 1.2rem;
             color: #ccc;
             border: 1px solid #ccc;
             cursor: pointer;
             transition: background-color .2s ease-in; }
             #main main section .content .content-sub .title .more:hover {
-              background-color: #000;
-              border-color: #000;
+              background-color: #222;
+              border-color: #222;
               color: #fff; }
         #main main section .content .content-sub .feeds {
           width: 100%;
@@ -454,7 +505,7 @@ button {
             box-sizing: border-box;
             max-width: 180px; }
             #main main section .content .content-sub .feeds .scroller ul li .feed {
-              padding: 20px; }
+              padding: 30px 20px; }
               #main main section .content .content-sub .feeds .scroller ul li .feed .thumbnail {
                 width: 160px;
                 height: 200px;
@@ -464,20 +515,23 @@ button {
               #main main section .content .content-sub .feeds .scroller ul li .feed .desc {
                 margin-top: 10px; }
                 #main main section .content .content-sub .feeds .scroller ul li .feed .desc .designer {
-                  font-size: 13px; }
+                  font-family: "Apple SD Gothic Neo";
+                  font-size: 1.4rem; }
                 #main main section .content .content-sub .feeds .scroller ul li .feed .desc .name {
                   margin-top: 5px;
                   max-width: 100%;
                   overflow: hidden;
                   text-overflow: ellipsis;
                   white-space: nowrap;
-                  font-size: 13px;
-                  line-height: 133%;
-                  color: #292929; }
+                  font-size: 1.2rem;
+                  line-height: 133%; }
                 #main main section .content .content-sub .feeds .scroller ul li .feed .desc .price {
                   line-height: 23px;
-                  font-size: 13px;
-                  color: #666; }
+                  font-size: 1.2rem;
+                  color: #e2264d; }
+                  #main main section .content .content-sub .feeds .scroller ul li .feed .desc .price span {
+                    color: #222;
+                    text-decoration-line: line-through; }
                 #main main section .content .content-sub .feeds .scroller ul li .feed .desc .interactive {
                   margin-top: 5px; }
                   #main main section .content .content-sub .feeds .scroller ul li .feed .desc .interactive span {
@@ -485,12 +539,15 @@ button {
                     margin-right: 5px; }
                     #main main section .content .content-sub .feeds .scroller ul li .feed .desc .interactive span i {
                       margin-right: 2px; }
+                      #main main section .content .content-sub .feeds .scroller ul li .feed .desc .interactive span i.fa-heart {
+                        color: #e2264d; }
       #main main section .content .content-sale {
         margin-top: 50px; }
         #main main section .content .content-sale .title {
           position: relative;
           padding: 12px;
-          font-size: 20px; }
+          font-size: 2.2rem;
+          font-family: "Apple SD Gothic Neo"; }
           #main main section .content .content-sale .title .sub {
             font-size: 11px;
             color: #ccc; }
@@ -498,20 +555,21 @@ button {
               margin-right: 2px; }
           #main main section .content .content-sale .title .more {
             position: absolute;
-            top: 20px;
+            top: 14px;
             right: 12px;
-            padding: 2px 10px;
-            font-size: 10px;
+            padding: 4px 15px;
+            font-size: 1.2rem;
             color: #ccc;
             border: 1px solid #ccc;
             cursor: pointer;
             transition: background-color .2s ease-in; }
             #main main section .content .content-sale .title .more:hover {
-              background-color: #000;
-              border-color: #000;
+              background-color: #222;
+              border-color: #222;
               color: #fff; }
         #main main section .content .content-sale .mails ul {
-          padding: 12px; }
+          font-family: "Apple SD Gothic Neo";
+          padding: 24px 12px; }
           #main main section .content .content-sale .mails ul li {
             border-left: 2px solid #ccc;
             border-bottom: 1px solid #ccc;
@@ -526,16 +584,16 @@ button {
               position: relative; }
               #main main section .content .content-sale .mails ul li .mail .subject {
                 margin-bottom: 5px;
-                font-size: 20px; }
+                font-size: 2.4rem; }
               #main main section .content .content-sale .mails ul li .mail .content {
                 margin-bottom: 5px;
-                font-size: 14px; }
+                font-size: 1.6rem; }
               #main main section .content .content-sale .mails ul li .mail .date {
                 position: absolute;
                 top: 50%;
                 right: 0px;
                 margin-top: -6px;
-                font-size: 12px; }
+                font-size: 1.4rem; }
   #main footer {
     width: 100%;
     padding: 18px 12px;
@@ -587,16 +645,14 @@ button {
     #main main section .content .content-main ul li .feature img {
       margin-left: 25%; }
     #main main section .content .content-main ul li .feature .desc {
-      margin-right: 25%; }
+      margin-right: 25%;
+      box-shadow: none; }
     #main main section .content .content-tags {
       max-width: 1280px;
       margin: 0 auto;
       margin-top: 50px; }
       #main main section .content .content-tags .ranking ul {
-        display: flex;
-        padding: 12px;
-        font-size: 12px;
-        font-weight: 500; }
+        display: flex; }
         #main main section .content .content-tags .ranking ul li {
           flex: 1;
           height: 200px; }
@@ -609,6 +665,7 @@ button {
               border-radius: 50px; }
             #main main section .content .content-tags .ranking ul li .tag .rank {
               width: initial;
+              margin-top: 10px;
               line-height: 40px; }
             #main main section .content .content-tags .ranking ul li .tag .desc {
               text-align: center;

@@ -2,6 +2,7 @@
 /* app.sass */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR");
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani");
+@import url("//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo");
 html,
 body,
 div,
@@ -166,6 +167,11 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
   display: none; }
 
 /* 구글 웹 폰트 적용 */
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  src: url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot");
+  src: url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff") format("woff"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.svg#Apple SD Gothic Neo") format("svg"); }
+
 /* 공통 스타일 */
 #popup {
   position: fixed;
@@ -176,7 +182,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   display: table;
-  font-family: "Noto Sans KR";
+  font-family: "Apple SD Gothic Neo";
   font-size: 16px;
   font-weight: 500; }
   #popup .wrapper {
@@ -229,7 +235,7 @@ html {
   height: 100%;
   font-family: "Noto Sans KR";
   font-size: 10px;
-  font-weight: 500; }
+  font-weight: 300; }
 
 button {
   background-color: transparent;
@@ -319,7 +325,7 @@ button {
       height: 400px;
       overflow: hidden; }
       #feed main section .content-designer img {
-        width: 100%; }
+        height: 100%; }
       #feed main section .content-designer .wrapper {
         position: absolute;
         width: 100%;
@@ -332,79 +338,87 @@ button {
           background: rgba(0, 0, 0, 0.4);
           color: #fff; }
           #feed main section .content-designer .wrapper .rect p {
-            font-size: 20px; }
+            font-family: "Apple SD Gothic Neo";
+            font-size: 2.4rem; }
           #feed main section .content-designer .wrapper .rect .line {
             display: inline-block;
             width: 20%;
             height: 3px;
             background-color: #fff; }
           #feed main section .content-designer .wrapper .rect .sub {
-            margin-top: 10px;
-            font-size: 12px; }
-          #feed main section .content-designer .wrapper .rect .toggle {
-            opacity: 1;
+            font-family: "Noto Sans KR";
+            margin-top: 14px;
+            font-size: 1.4rem; }
+          #feed main section .content-designer .wrapper .rect .push {
             position: absolute;
             top: 25px;
-            right: 20px; }
-            #feed main section .content-designer .wrapper .rect .toggle .tgl {
-              display: none; }
-              #feed main section .content-designer .wrapper .rect .toggle .tgl, #feed main section .content-designer .wrapper .rect .toggle .tgl:after, #feed main section .content-designer .wrapper .rect .toggle .tgl:before,
-              #feed main section .content-designer .wrapper .rect .toggle .tgl *,
-              #feed main section .content-designer .wrapper .rect .toggle .tgl *:after,
-              #feed main section .content-designer .wrapper .rect .toggle .tgl *:before,
-              #feed main section .content-designer .wrapper .rect .toggle .tgl + .tgl-btn {
-                box-sizing: border-box; }
-                #feed main section .content-designer .wrapper .rect .toggle .tgl::selection, #feed main section .content-designer .wrapper .rect .toggle .tgl:after::selection, #feed main section .content-designer .wrapper .rect .toggle .tgl:before::selection,
-                #feed main section .content-designer .wrapper .rect .toggle .tgl *::selection,
-                #feed main section .content-designer .wrapper .rect .toggle .tgl *:after::selection,
-                #feed main section .content-designer .wrapper .rect .toggle .tgl *:before::selection,
-                #feed main section .content-designer .wrapper .rect .toggle .tgl + .tgl-btn::selection {
-                  background: none; }
-              #feed main section .content-designer .wrapper .rect .toggle .tgl + .tgl-btn {
-                outline: 0;
-                display: block;
-                width: 4em;
-                height: 2em;
-                position: relative;
-                cursor: pointer;
-                user-select: none; }
-                #feed main section .content-designer .wrapper .rect .toggle .tgl + .tgl-btn:after, #feed main section .content-designer .wrapper .rect .toggle .tgl + .tgl-btn:before {
-                  position: relative;
+            right: 20px;
+            display: flex; }
+            #feed main section .content-designer .wrapper .rect .push span {
+              font-size: 1.2rem;
+              margin-right: 10px; }
+            #feed main section .content-designer .wrapper .rect .push .toggle {
+              opacity: 1; }
+              #feed main section .content-designer .wrapper .rect .push .toggle .tgl {
+                display: none; }
+                #feed main section .content-designer .wrapper .rect .push .toggle .tgl, #feed main section .content-designer .wrapper .rect .push .toggle .tgl:after, #feed main section .content-designer .wrapper .rect .push .toggle .tgl:before,
+                #feed main section .content-designer .wrapper .rect .push .toggle .tgl *,
+                #feed main section .content-designer .wrapper .rect .push .toggle .tgl *:after,
+                #feed main section .content-designer .wrapper .rect .push .toggle .tgl *:before,
+                #feed main section .content-designer .wrapper .rect .push .toggle .tgl + .tgl-btn {
+                  box-sizing: border-box; }
+                  #feed main section .content-designer .wrapper .rect .push .toggle .tgl::selection, #feed main section .content-designer .wrapper .rect .push .toggle .tgl:after::selection, #feed main section .content-designer .wrapper .rect .push .toggle .tgl:before::selection,
+                  #feed main section .content-designer .wrapper .rect .push .toggle .tgl *::selection,
+                  #feed main section .content-designer .wrapper .rect .push .toggle .tgl *:after::selection,
+                  #feed main section .content-designer .wrapper .rect .push .toggle .tgl *:before::selection,
+                  #feed main section .content-designer .wrapper .rect .push .toggle .tgl + .tgl-btn::selection {
+                    background: none; }
+                #feed main section .content-designer .wrapper .rect .push .toggle .tgl + .tgl-btn {
+                  outline: 0;
                   display: block;
-                  content: "";
-                  width: 50%;
-                  height: 100%; }
-                #feed main section .content-designer .wrapper .rect .toggle .tgl + .tgl-btn:after {
-                  left: 0; }
-                #feed main section .content-designer .wrapper .rect .toggle .tgl + .tgl-btn:before {
-                  display: none; }
-              #feed main section .content-designer .wrapper .rect .toggle .tgl:checked + .tgl-btn:after {
-                left: 50%; }
-            #feed main section .content-designer .wrapper .rect .toggle .tgl-light + .tgl-btn {
-              background: #f0f0f0;
-              border-radius: 2em;
-              padding: 2px;
-              transition: all .4s ease; }
-              #feed main section .content-designer .wrapper .rect .toggle .tgl-light + .tgl-btn:after {
-                border-radius: 50%;
-                background: #fff;
-                transition: all .2s ease; }
-            #feed main section .content-designer .wrapper .rect .toggle .tgl-light:checked + .tgl-btn {
-              background: #47cf73; }
+                  width: 4em;
+                  height: 2em;
+                  position: relative;
+                  cursor: pointer;
+                  user-select: none; }
+                  #feed main section .content-designer .wrapper .rect .push .toggle .tgl + .tgl-btn:after, #feed main section .content-designer .wrapper .rect .push .toggle .tgl + .tgl-btn:before {
+                    position: relative;
+                    display: block;
+                    content: "";
+                    width: 50%;
+                    height: 100%; }
+                  #feed main section .content-designer .wrapper .rect .push .toggle .tgl + .tgl-btn:after {
+                    left: 0; }
+                  #feed main section .content-designer .wrapper .rect .push .toggle .tgl + .tgl-btn:before {
+                    display: none; }
+                #feed main section .content-designer .wrapper .rect .push .toggle .tgl:checked + .tgl-btn:after {
+                  left: 50%; }
+              #feed main section .content-designer .wrapper .rect .push .toggle .tgl-light + .tgl-btn {
+                background: #f0f0f0;
+                border-radius: 2em;
+                padding: 2px;
+                transition: all .4s ease; }
+                #feed main section .content-designer .wrapper .rect .push .toggle .tgl-light + .tgl-btn:after {
+                  border-radius: 50%;
+                  background: #fff;
+                  transition: all .2s ease; }
+              #feed main section .content-designer .wrapper .rect .push .toggle .tgl-light:checked + .tgl-btn {
+                background: #0077ff; }
     #feed main section .content-feed .feedlist {
       padding: 12px; }
       #feed main section .content-feed .feedlist .title {
         position: relative;
-        margin-top: 20px;
+        margin-top: 4.8rem;
         text-align: center; }
         #feed main section .content-feed .feedlist .title p {
-          font-size: 20px;
+          font-family: "Apple SD Gothic Neo";
+          font-size: 2.4rem;
           z-index: 2; }
         #feed main section .content-feed .feedlist .title span {
           display: inline-block;
           width: 50px;
           height: 2px;
-          background-color: #000; }
+          background-color: #222; }
       #feed main section .content-feed .feedlist ul {
         display: flex;
         flex-wrap: wrap;
@@ -425,12 +439,12 @@ button {
               #feed main section .content-feed .feedlist ul li .feed .thumbnail img {
                 width: 100%; }
             #feed main section .content-feed .feedlist ul li .feed .desc {
-              margin-top: 10px; }
+              margin-top: 20px; }
               #feed main section .content-feed .feedlist ul li .feed .desc .designer {
-                font-size: 12px;
+                font-family: "Apple SD Gothic Neo";
+                font-size: 1.4rem;
                 display: inline-block;
-                font-size: 12px;
-                padding: 1px 10px;
+                padding: 2px 15px;
                 border: 1px solid #333; }
               #feed main section .content-feed .feedlist ul li .feed .desc .name {
                 margin-top: 5px;
@@ -438,17 +452,24 @@ button {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
-                font-size: 13px;
-                line-height: 133%;
-                color: #292929; }
-              #feed main section .content-feed .feedlist ul li .feed .desc .price {
+                font-size: 1.4rem;
                 line-height: 23px;
-                font-size: 13px;
-                color: #666; }
+                color: #292929; }
+              #feed main section .content-feed .feedlist ul li .feed .desc .default {
+                font-family: "Apple SD Gothic Neo";
+                line-height: 23px;
+                font-size: 1.4rem;
+                color: #222;
+                text-decoration-line: line-through; }
+              #feed main section .content-feed .feedlist ul li .feed .desc .price {
+                font-family: "Apple SD Gothic Neo";
+                line-height: 23px;
+                font-size: 1.4rem;
+                color: #e2264d; }
   #feed footer {
     width: 100%;
     padding: 18px 12px;
-    font-size: 12px;
+    font-size: 1.2rem;
     background-color: #222;
     transition: all .2s ease-in; }
     #feed footer .wrapper {
@@ -495,9 +516,12 @@ button {
         margin-right: 100px; }
     #feed main section .content .content-designer {
       height: 500px; }
+      #feed main section .content .content-designer img {
+        width: 100%;
+        height: auto; }
       #feed main section .content .content-designer .wrapper {
         max-width: 1280px;
-        padding: 20px;
+        padding: 50px;
         margin-left: 12px;
         left: 50%;
         transform: translateX(-50%); }

@@ -5,21 +5,16 @@
 
 @import '../sprite/css/svg';
 
-$color-backgroundgray : #f7f7f7;
-$color-black : #000;
-$color-darkgray : #666666;
-$color-coolgray : #999999;
-$color-lightgray : #f6f6f6;
-$color-skyblue: #23b9ff;
-$color-yellow: #ffc95e;
-$color-pink: #fd446e;
+$color-black : #222;
+$color-red: rgb(226, 38, 77);
+$color-blue: #0077ff;
 
 html {
   width: 100%;
   height: 100%;  
   font-family: "Noto Sans KR";
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 button{
@@ -165,17 +160,23 @@ button{
             }
           }
           .designer{
-            font-size: 25px;
+            margin-top: 5px;
+            font-family: "Apple SD Gothic Neo";
+            font-size: 3.0rem;
           }
           .name{
-            font-size: 16px;
+            font-size: 2.0rem;
           }
           .before{
-            font-size: 14px;
+            font-family: "Apple SD Gothic Neo";
+            font-size: 1.6rem;
+            color: $color-black;
             text-decoration:line-through 
           }
           .after{
-            font-size: 14px;
+            font-family: "Apple SD Gothic Neo";
+            font-size: 1.6rem;
+            color: $color-red;
           }
           .btns{
             display: inline-block;
@@ -309,16 +310,22 @@ button{
               box-sizing: border-box;
               padding: 5px 12px;
               font-size: 15px;
-              background-color: #000;
+              background-color: $color-black;
               color: #fff;
               vertical-align: middle;
               border-radius: 5px;
               margin-right: 5px;
             }
+            span{
+              margin-top: 20px;
+              font-family: "Apple SD Gothic Neo";
+              line-height: 45px;
+              font-size: 1.2rem;
+            }
           }
         }
         .swiper-button-prev:after,.swiper-button-next:after{
-          color: #000;
+          color: $color-black;
           opacity: .2;
         }
         .pagination{
@@ -334,7 +341,7 @@ button{
               height: 8px;
               margin-right: 5px;
               &.swiper-pagination-bullet-active{
-                background-color: #000 !important;
+                background-color: $color-black !important;
               }
             }
           }
@@ -343,13 +350,14 @@ button{
       .content-comment{
         padding: 20px;   
         .title{
-          font-size: 20px;
+          font-family: "Apple SD Gothic Neo";
+          font-size: 2.4rem;
         }
         .comment{
           margin-top: 40px;
           .desc{
             margin-top: 10px;
-            font-size: 14px;
+            font-size: 1.6rem;
           }
         }
         .graph{
@@ -366,6 +374,7 @@ button{
               max-width: 50%;
               padding: 30px;
               box-sizing: border-box;
+              transition: all .2s ease-in;
 
               $progress-bar-stroke-width: 1.8;
               $progress-bar-size: 100%;
@@ -373,24 +382,41 @@ button{
                 height: $progress-bar-size;
                 transform: rotate(-90deg);
                 width: $progress-bar-size;
-              }
-              
+              }              
               .progress-bar__background {
                 fill: none;
                 stroke: #e2eff0;
                 stroke-width: $progress-bar-stroke-width;
-              }
-              
+              }              
               .progress-bar__progress {
                 fill: none;
                 stroke: #e2eff0;
                 stroke: #78bec7;
                 stroke-dasharray: 100 100;
-                stroke-dashoffset: 100;
+                stroke-dashoffset: 40;
                 stroke-linecap: round;
                 stroke-width: $progress-bar-stroke-width;
                 transition: stroke-dashoffset 1s ease-in-out;
-              } 
+              }
+
+              .pt{
+                position: absolute;
+                display: inline-block;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                font-family: "Apple SD Gothic Neo";
+                font-size: 2.0rem;
+                transition: all .2s ease-in;
+                .point{
+                  font-size: 3.4rem;
+                }
+                .sub{
+                  font-size: 1.8rem;
+                }
+              }
+
             }
           }
           
@@ -415,14 +441,13 @@ button{
                 float: left; 
                 box-sizing: border-box;
                 width: 300px;                
-                padding: 10px;
+                padding: 20px 10px;
                 .wrapper{
                   position: relative;
                   box-sizing: border-box;
                   width: 100%;
                   height: 250px;
                   overflow: hidden;
-                  border-radius: 7px;
                   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
                   img{
                     width: 100%;
@@ -439,22 +464,32 @@ button{
                       width: 30px;
                       height: 30px;
                       position: absolute;
-                      top: -30px;
-                      left: 0px;
+                      top: -20px;
+                      left: 10px;
+                      border-radius: 15px;
+                      background-color: #fff;
                     }
                     .subject{
-                      font-size: 14px;
+                      font-size: 1.6rem;
                     }
                     .content{
+                      margin-top: 10px;
                       height: 0px;
                       overflow: hidden;
+                      font-size: 1.3rem;
+                      color: #666;
                       transition: all .2s ease-in;
                     }
                     .link{
-                      margin-top: 10px;
-                      font-size: 10px;
+                      margin-top: 15px;
+                      font-size: 1.3rem;
+                      line-height: 30px;
+                      cursor: pointer;
                       i{
                         margin-left: 2px;
+                      }
+                      &:hover{
+                        border-bottom: 1px solid #ccc;
                       }
                     }
                   }
@@ -477,8 +512,8 @@ button{
   footer {    
     width: 100%;
     padding: 18px 12px;
-    font-size: 12px;
-    background-color: #222;
+    font-size: 1.2rem;
+    background-color: $color-black;
     transition: all .2s ease-in;
     .wrapper{
       height: 400px;

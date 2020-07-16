@@ -53,6 +53,7 @@
                 }
                 .desc{
                   margin-right: 25%;
+                  box-shadow: none;
                 }
               }
             }
@@ -65,9 +66,6 @@
           .ranking{
             ul {
               display: flex;
-              padding: 12px;
-              font-size: 12px;
-              font-weight: 500;
               li {
                 flex: 1;
                 height: 200px;                
@@ -83,7 +81,8 @@
                   }
                   .rank{
                     width: initial;
-                    line-height: 40px;
+                    margin-top: 10px;
+                    line-height: 40px;                    
                   }
                   .desc{
                     text-align: center;

@@ -43,42 +43,13 @@
 
   main {  
     section{
-      .content-detail{
+      .content{
         max-width: 1280px;
         margin: 0 auto;
-        .imgs{
-          margin-left: 50px;
-          .wrapper{
-            width: 70%;
-            ul{              
-              li{
-                display: inline;
-                min-width: 100%;
-                div{
-                  height: 600px;
-                }
-              }
-            }
-          }
-        }
-        .desc{
-          left: initial;
-          right: 50px;
-          bottom: 100px;      
-          background-color: #FFF;    
-        }
-      }
-      .content-comment{
-        max-width: 1000px;
-        margin: 0 auto;
-        .graph{
-          .circles{
-            .wrapper{
-              min-width: 25%;
-              max-width: 25%;
-            }
-          }
-        }
+        .content-designer{
+        }      
+        .content-chart{
+        }      
       }
     }
   }

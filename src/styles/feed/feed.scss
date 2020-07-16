@@ -5,21 +5,16 @@
 
 @import '../sprite/css/svg';
 
-$color-backgroundgray : #f7f7f7;
-$color-black : #000;
-$color-darkgray : #666666;
-$color-coolgray : #999999;
-$color-lightgray : #f6f6f6;
-$color-skyblue: #23b9ff;
-$color-yellow: #ffc95e;
-$color-pink: #fd446e;
+$color-black : #222;
+$color-red: rgb(226, 38, 77);
+$color-blue: #0077ff;
 
 html {
   width: 100%;
   height: 100%;  
   font-family: "Noto Sans KR";
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 button{
@@ -131,7 +126,7 @@ button{
         height: 400px;
         overflow: hidden;
         img{
-          width: 100%;
+          height: 100%;
         }
         .wrapper{
           position: absolute;
@@ -145,7 +140,8 @@ button{
             background: rgba(0, 0, 0, 0.4);           
             color: #fff;
             p{
-              font-size: 20px;
+              font-family: "Apple SD Gothic Neo";
+              font-size: 2.4rem;
             }
             .line{
               display: inline-block;
@@ -154,78 +150,85 @@ button{
               background-color: #fff;
             }
             .sub{
-              margin-top: 10px;
-              font-size: 12px;
+              font-family: "Noto Sans KR";
+              margin-top: 14px;
+              font-size: 1.4rem;
             }
-            .toggle{
-              opacity: 1; 
+            .push{              
               position: absolute;
               top: 25px;
               right: 20px;
-              .tgl {
-                display: none;
-                
-                // add default box-sizing for this scope
-                &,
-                &:after,
-                &:before,
-                & *,
-                & *:after,
-                & *:before,
-                & + .tgl-btn {
-                  box-sizing: border-box;
-                  &::selection {
-                    background: none;
-                  }
-                }
-                
-                + .tgl-btn {
-                  outline: 0;
-                  display: block;
-                  width: 4em;
-                  height: 2em;
-                  position: relative;
-                  cursor: pointer;
-                  user-select: none;
-                  &:after,
-                  &:before {
-                    position: relative;
-                    display: block;
-                    content: "";
-                    width: 50%;
-                    height: 100%;
-                  }
-                  
-                  &:after {
-                    left: 0;
-                  }
-                  
-                  &:before {
-                    display: none;
-                  }
-                }
-                
-                &:checked + .tgl-btn:after {
-                  left: 50%;
-                }
+              display: flex;
+              span{
+                font-size: 1.2rem;
+                margin-right: 10px;
               }
-              
-              // themes
-              .tgl-light {
-                + .tgl-btn {
-                  background: #f0f0f0;
-                  border-radius: 2em;
-                  padding: 2px;
-                  transition: all .4s ease;
-                  &:after {
-                    border-radius: 50%;
-                    background: #fff;
-                    transition: all .2s ease;
+              .toggle{
+                opacity: 1; 
+                .tgl {
+                  display: none;                
+                  // add default box-sizing for this scope
+                  &,
+                  &:after,
+                  &:before,
+                  & *,
+                  & *:after,
+                  & *:before,
+                  & + .tgl-btn {
+                    box-sizing: border-box;
+                    &::selection {
+                      background: none;
+                    }
+                  }
+                  
+                  + .tgl-btn {
+                    outline: 0;
+                    display: block;
+                    width: 4em;
+                    height: 2em;
+                    position: relative;
+                    cursor: pointer;
+                    user-select: none;
+                    &:after,
+                    &:before {
+                      position: relative;
+                      display: block;
+                      content: "";
+                      width: 50%;
+                      height: 100%;
+                    }
+                    
+                    &:after {
+                      left: 0;
+                    }
+                    
+                    &:before {
+                      display: none;
+                    }
+                  }
+                  
+                  &:checked + .tgl-btn:after {
+                    left: 50%;
                   }
                 }
                 
-                &:checked + .tgl-btn {
-                  background: #47cf73;
+                // themes
+                .tgl-light {
+                  + .tgl-btn {
+                    background: #f0f0f0;
+                    border-radius: 2em;
+                    padding: 2px;
+                    transition: all .4s ease;
+                    &:after {
+                      border-radius: 50%;
+                      background: #fff;
+                      transition: all .2s ease;
+                    }
+                  }
+                  
+                  &:checked + .tgl-btn {
+                    background: $color-blue;
+                  }
                 }
               }
             }
@@ -237,17 +240,18 @@ button{
           padding: 12px;
           .title{
             position: relative;
-            margin-top: 20px;
+            margin-top: 4.8rem;
             text-align: center;
             p{
-              font-size: 20px;
+              font-family: "Apple SD Gothic Neo";
+              font-size: 2.4rem;
               z-index: 2;
             }
             span{
               display: inline-block;
               width: 50px;
               height: 2px;
-              background-color: #000;
+              background-color: $color-black;
             }
           }
           ul{
@@ -272,12 +276,12 @@ button{
                   }
                 }
                 .desc{
-                  margin-top: 10px;
+                  margin-top: 20px;
                   .designer{
-                    font-size: 12px;
+                    font-family: "Apple SD Gothic Neo";
+                    font-size: 1.4rem;
                     display: inline-block;
-                    font-size: 12px;
-                    padding: 1px 10px;
+                    padding: 2px 15px;
                     border: 1px solid #333;
                   }
                   .name{
@@ -286,14 +290,22 @@ button{
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
-                    font-size: 13px;
-                    line-height: 133%;
+                    font-size: 1.4rem;
+                    line-height: 23px;
                     color: #292929;
                   }
-                  .price {                    
+                  .default{
+                    font-family: "Apple SD Gothic Neo";        
                     line-height: 23px;
-                    font-size: 13px;
-                    color: #666;
+                    font-size: 1.4rem;
+                    color: $color-black;
+                    text-decoration-line: line-through;
+                  }
+                  .price {            
+                    font-family: "Apple SD Gothic Neo";        
+                    line-height: 23px;
+                    font-size: 1.4rem;
+                    color: $color-red;
                   }
                 }
               }
@@ -307,8 +319,8 @@ button{
   footer {    
     width: 100%;
     padding: 18px 12px;
-    font-size: 12px;
-    background-color: #222;
+    font-size: 1.2rem;
+    background-color: $color-black;
     transition: all .2s ease-in;
     .wrapper{
       height: 400px;

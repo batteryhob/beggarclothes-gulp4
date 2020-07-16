@@ -2,6 +2,7 @@
 /* app.sass */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR");
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani");
+@import url("//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo");
 html,
 body,
 div,
@@ -166,6 +167,11 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
   display: none; }
 
 /* 구글 웹 폰트 적용 */
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  src: url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot");
+  src: url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff") format("woff"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.svg#Apple SD Gothic Neo") format("svg"); }
+
 /* 공통 스타일 */
 #popup {
   position: fixed;
@@ -176,7 +182,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   display: table;
-  font-family: "Noto Sans KR";
+  font-family: "Apple SD Gothic Neo";
   font-size: 16px;
   font-weight: 500; }
   #popup .wrapper {
@@ -229,7 +235,7 @@ html {
   height: 100%;
   font-family: "Noto Sans KR";
   font-size: 10px;
-  font-weight: 500; }
+  font-weight: 300; }
 
 button {
   background-color: transparent;
@@ -321,28 +327,43 @@ button {
         width: 300px;
         margin: 0 auto;
         padding-top: 100px; }
-        #signin main section .content .auth ul li div {
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 40px;
-          padding: 0 21px;
-          border-radius: 20px;
-          cursor: pointer;
-          margin-bottom: 16px;
-          box-sizing: border-box;
-          border: 1px solid #d6d9dc;
-          text-align: center;
-          background: #FFF;
-          transition: all .2s ease-in; }
-          #signin main section .content .auth ul li div svg {
-            width: 18px;
-            height: 18px;
-            border-radius: 2px;
-            vertical-align: middle;
-            margin-top: -4px;
-            margin-right: 10px; }
-          #signin main section .content .auth ul li div:hover {
-            background-color: #eee; }
+        #signin main section .content .auth .title {
+          position: relative;
+          margin-top: 4.8rem;
+          text-align: center; }
+          #signin main section .content .auth .title p {
+            font-family: "Apple SD Gothic Neo";
+            font-size: 2.4rem;
+            z-index: 2; }
+          #signin main section .content .auth .title span {
+            display: inline-block;
+            width: 50px;
+            height: 2px;
+            background-color: #000; }
+        #signin main section .content .auth ul {
+          margin-top: 30px; }
+          #signin main section .content .auth ul li div {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 40px;
+            padding: 0 21px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #d6d9dc;
+            text-align: center;
+            background: #FFF;
+            transition: all .2s ease-in; }
+            #signin main section .content .auth ul li div svg {
+              width: 18px;
+              height: 18px;
+              border-radius: 2px;
+              vertical-align: middle;
+              margin-top: -4px;
+              margin-right: 10px; }
+            #signin main section .content .auth ul li div:hover {
+              background-color: #eee; }
   #signin footer {
     width: 100%;
     padding: 18px 12px;
