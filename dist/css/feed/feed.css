@@ -175,7 +175,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 /* 공통 스타일 */
 #popup {
   position: fixed;
-  z-index: 9;
+  z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;
@@ -219,6 +219,51 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
           outline: none; }
           #popup .wrapper .contents .btns button img {
             vertical-align: middle; }
+
+aside {
+  display: none; }
+
+@media only screen and (max-width: 768px) {
+  aside {
+    display: block;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-left: -100%;
+    transition: all .2s ease-in; }
+    aside.active {
+      margin-left: 0%; }
+    aside .wrapper {
+      width: 100%;
+      height: 100%;
+      background-color: #FFF;
+      padding-top: 20px; }
+      aside .wrapper .title {
+        font-size: 2.0rem;
+        text-align: right;
+        padding-right: 30px;
+        color: #999; }
+      aside .wrapper .contents {
+        padding-top: 20px; }
+        aside .wrapper .contents li {
+          height: 50px;
+          line-height: 50px;
+          padding-left: 40px;
+          box-sizing: border-box;
+          font-size: 1.3rem; }
+          aside .wrapper .contents li div {
+            border-bottom: 1px solid #ccc;
+            position: relative;
+            padding-left: 12px; }
+            aside .wrapper .contents li div span i {
+              position: absolute;
+              top: 18px;
+              right: 12px;
+              color: #999; } }
 
 .svg-icon-important-ver-2-14 {
   background: url("/svg/sprite.css-60b06065.svg") no-repeat; }
@@ -308,6 +353,8 @@ button {
         #feed header .content .logo img {
           height: 42px;
           margin: 0 auto; }
+      #feed header .content .center {
+        display: none; }
       #feed header .content .right {
         flex: 1;
         text-align: right;
@@ -511,6 +558,22 @@ button {
         #feed header .content .logo img {
           margin: initial;
           height: 22px; }
+      #feed header .content .center {
+        display: block; }
+        #feed header .content .center ul {
+          display: flex;
+          flex-direction: row;
+          font-size: 1.3rem; }
+          #feed header .content .center ul li {
+            width: 100px;
+            flex: 1 1 auto;
+            box-sizing: border-box; }
+            #feed header .content .center ul li span {
+              transition: all .2s ease-in;
+              border-bottom: 1px solid transparent;
+              cursor: pointer; }
+              #feed header .content .center ul li span:hover {
+                border-color: #222; }
       #feed header .content .right {
         height: 22px;
         line-height: 22px;

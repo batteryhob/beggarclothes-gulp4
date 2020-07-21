@@ -2,7 +2,7 @@
 /* 공통 스타일 */
 #popup {
     position: fixed;
-    z-index: 9;
+    z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;
@@ -48,6 +48,62 @@
                     outline: none;
                     img{
                         vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+}
+
+aside{
+    display: none;
+}
+@media only screen  and (max-width : 768px) {
+    aside{
+        display: block;
+        position: fixed;
+        z-index: 1001;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.3);
+        margin-left: -100%;
+        transition: all .2s ease-in;
+        &.active{
+            margin-left: 0%;
+        }
+        .wrapper{        
+            width: 100%;
+            height: 100%;
+            background-color: #FFF;
+            padding-top: 20px;
+            .title{
+                font-size: 2.0rem;
+                text-align: right;
+                padding-right: 30px;
+                color: #999;
+            }
+            .contents{
+                padding-top: 20px;
+                li{
+                    height: 50px;
+                    line-height: 50px;
+                    padding-left: 40px;
+                    box-sizing: border-box;
+                    font-size: 1.3rem;                
+                    div{
+                        border-bottom: 1px solid #ccc;
+                        position: relative;
+                        padding-left: 12px;
+                        span{
+                            i{
+                                position: absolute;
+                                top: 18px;
+                                right: 12px;
+                                color: #999;
+                            }
+                        }
                     }
                 }
             }

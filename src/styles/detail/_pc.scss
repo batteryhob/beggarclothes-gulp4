@@ -33,6 +33,27 @@
           height: $headersize;
         }
       }
+      .center{
+        display: block;
+        ul{
+          display:flex;
+          flex-direction:row;
+          font-size: 1.3rem;
+          li{
+            width: 100px;
+            flex:1 1 auto;
+            box-sizing: border-box;            
+            span{
+              transition: all .2s ease-in;
+              border-bottom: 1px solid transparent;
+              cursor: pointer;
+              &:hover{
+                border-color: $color-black;
+              }
+            }
+          }
+        }
+      }
       .right{
         height: $headersize;
         line-height: $headersize;
