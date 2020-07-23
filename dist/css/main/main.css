@@ -418,7 +418,8 @@ button {
             width: 30px;
             height: 5px;
             background-color: #222; }
-      #main main section .content .content-main .swiper-button-prev:after, #main main section .content .content-main .swiper-button-next:after {
+      #main main section .content .content-main .swiper-button-prev:after,
+      #main main section .content .content-main .swiper-button-next:after {
         color: #222;
         opacity: .2; }
       #main main section .content .content-main .pagination {
@@ -710,6 +711,10 @@ button {
     #main main section .content .content-main ul li .feature .desc {
       margin-right: 25%;
       box-shadow: none; }
+    #main main section .content .content-main .swiper-button-prev {
+      left: 40px; }
+    #main main section .content .content-main .swiper-button-next {
+      right: 40px; }
     #main main section .content .content-tags {
       max-width: 1280px;
       margin: 0 auto;
