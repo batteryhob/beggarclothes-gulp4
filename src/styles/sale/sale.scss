@@ -8,6 +8,7 @@
 $color-black : #222;
 $color-red: rgb(226, 38, 77);
 $color-blue: #0077ff;
+$color-navy: #00469B;
 
 html {
   width: 100%;
@@ -31,7 +32,7 @@ button{
   display: none;
 }
 
-#signin{
+#sale{
   background-color: #fff;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -126,11 +127,10 @@ button{
       min-width: 320px;
       .content{
         text-align: center;
-        .auth{
-          display: inline-block;
-          width: 300px;
-          margin: 0 auto;
-          padding-top: 100px;
+        .content-list{
+          width: 100%;          
+          box-sizing: border-box;
+          padding: 20px;
           .title{
             position: relative;
             margin-top: 4.8rem;
@@ -148,31 +148,44 @@ button{
             }
           }
           ul{
+            width: 100%;
             margin-top: 30px;
+            margin-bottom: 100px;
             li{
-              div{
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 40px;
-                padding: 0 21px;
-                border-radius: 20px;
-                cursor: pointer;
-                margin-bottom: 16px;
-                box-sizing: border-box;
-                border: 1px solid #d6d9dc;
-                text-align: center;
-                background: #FFF;
-                transition: all .2s ease-in;
-                svg{
-                  width: 18px;
-                  height: 18px;
-                  border-radius: 2px;
-                  vertical-align: middle;
-                  margin-top: -4px;
-                  margin-right: 10px;
+              width: 100%;
+              box-sizing: border-box;
+              padding: 20px;
+              border-bottom: 1px solid #ccc;
+              transition: all .2s ease-in;
+              cursor: pointer;
+              &:last-child{
+                border-bottom: none;
+              }
+              &:hover{
+                background-color: #eee;
+              }
+              .mail{
+                text-align: left;
+                .time{                  
+                  font-size: 1.4rem;
+                  color: $color-navy;              
                 }
-                &:hover{
-                  background-color: #eee;
+                .subject{
+                  margin-top: 5px;
+                  font-size: 2.3rem;
+                  font-family: "Apple SD Gothic Neo";
+                  color: $color-black;     
+                }
+                .desc{
+                  margin-top: 5px;
+                  font-size: 1.5rem;
+                  color: #888;
+                }
+                .from{
+                  margin-top: 15px;
+                  font-size: 1.3rem;
+                  font-family: "Apple SD Gothic Neo";
+                  color: #888;                
                 }
               }
             }
