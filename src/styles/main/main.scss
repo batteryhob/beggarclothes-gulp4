@@ -6,7 +6,7 @@
 @import '../sprite/css/svg';
 
 $color-black : #222;
-$color-red: rgb(226, 38, 77);
+$color-red: #c41429;
 $color-blue: #0077ff;
 
 html {
@@ -219,18 +219,29 @@ button{
           .title{
             position: relative;
             padding: 12px;
-            font-size: 2.2rem;
-            font-family: "Apple SD Gothic Neo";
+            font-size: 2.2rem;  
+            font-weight: 700;          
             .sub{
-              font-size: 11px;
-              color: #ccc;
+              margin-top: 15px;
+              font-size: 1.4rem;
+              font-weight: 500;
+              .update{
+                display: inline-block;
+                width: 50px;
+                height: 18px;
+                line-height: 18px;
+                text-align: center;
+                color: $color-red;
+                border: 1px solid $color-red;
+                margin-left: 5px;
+              }
               i{
                 margin-right: 2px;
               }     
             }
             .more{
               position: absolute;
-              top: 14px;
+              top: 34px;
               right: 12px;
               padding: 4px 15px;
               font-size: 1.2rem;
@@ -251,6 +262,7 @@ button{
               font-size: 1.2rem;
               li {
                 height: 50px;
+                cursor: pointer;
                 .tag{
                   display: flex;
                   text-align: center;
@@ -268,7 +280,7 @@ button{
                     width: 50px;
                     line-height: 50px;
                     font-size: 1.4rem;
-                    font-family: "Apple SD Gothic Neo";
+                    font-weight: 700;
                   }
                   .desc{
                     text-align: left;
@@ -326,18 +338,19 @@ button{
           .title{
             position: relative;
             padding: 12px;
-            font-size: 2.2rem;
-            font-family: "Apple SD Gothic Neo";
+            font-size: 2.2rem;  
+            font-weight: 700;          
             .sub{
-              font-size: 11px;
-              color: #ccc;
+              margin-top: 15px;
+              font-size: 1.4rem;
+              font-weight: 500;
               i{
                 margin-right: 2px;
               }     
             }
             .more{
               position: absolute;
-              top: 14px;
+              top: 34px;
               right: 12px;
               padding: 4px 15px;
               font-size: 1.2rem;
@@ -369,11 +382,33 @@ button{
                   .feed{
                     padding: 30px 20px;
                     .thumbnail{
+                      position: relative;
                       width: 160px;
                       height: 200px;
                       overflow: hidden;
+                      cursor: pointer;
                       img{   
-                        width: 100%;
+                        width: 100%;                        
+                        &.one{
+                          opacity: 1;
+                        }
+                        &.two{
+                          position: absolute;
+                          top: 0px;
+                          left: 0px;
+                          opacity: 0;
+                          transition: opacity .3s ease-in;
+                        }
+                      }
+                      &:hover{
+                        img{   
+                          &.one{
+                            opacity: 0;
+                          }
+                          &.two{
+                            opacity: 1;
+                          }
+                        }
                       }
                     }
                     .desc{
@@ -429,18 +464,19 @@ button{
           .title{
             position: relative;
             padding: 12px;
-            font-size: 2.2rem;
-            font-family: "Apple SD Gothic Neo";
+            font-size: 2.2rem;  
+            font-weight: 700;          
             .sub{
-              font-size: 11px;
-              color: #ccc;
+              margin-top: 15px;
+              font-size: 1.4rem;
+              font-weight: 500;
               i{
                 margin-right: 2px;
               }     
             }
             .more{
               position: absolute;
-              top: 14px;
+              top: 34px;
               right: 12px;
               padding: 4px 15px;
               font-size: 1.2rem;
@@ -464,6 +500,24 @@ button{
                 border-bottom: 1px solid #ccc;
                 box-sizing: border-box;
                 padding: 10px 15px;
+                cursor: pointer;
+                &.hot{
+                  border-left: 2px solid #c41429;
+                  .mail{
+                    .subject{
+                      span{
+                        display: inline-block;
+                        width: 50px;
+                        height: 25px;
+                        line-height: 25px;
+                        text-align: center;
+                        background-color: #c41429;
+                        color: #fff;
+                        margin-left: 5px;
+                      }
+                    }
+                  }
+                }
                 &:last-child{
                   border-bottom: none;
                 }

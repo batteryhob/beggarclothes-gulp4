@@ -94,7 +94,7 @@
                         <li>
                             <div>
                                 <span>
-                                    디자이너
+                                    디자이너 랭킹
                                     <i class="fas fa-chevron-right right"></i>
                                 </span>
                             </div>
@@ -163,8 +163,8 @@
 
                         <div class="content-tags">
                             <div class="title">
-                                <p>Designer Ranking</p>
-                                <!-- <p class="sub"><i class="fas fa-info-circle"></i>디매 어미새 고아캐등 패션카페 24시간 언급량</p> -->
+                                <p>이번주 디자이너 랭킹</p>
+                                <p class="sub">2020년 9월 17일 <span class="update">update</span></p>
                                 <span class="more">
                                     More
                                     <i class="fas fa-chevron-right right"></i>
@@ -216,8 +216,8 @@
 
                         <div class="content-sub">
                             <div class="title">
-                                <p>Curation</p>
-                                <!-- <p class="sub"><i class="fas fa-info-circle"></i>해외명품 오픈마켓 중고나라 큐레이션 딜</p> -->
+                                <p>추천</p>
+                                <p class="sub">매일 매일 새로운 세일 아이템 추천</p>
                                 <span class="more">
                                     More
                                     <i class="fas fa-chevron-right right"></i>
@@ -230,7 +230,8 @@
                                             <li>
                                                 <div class="feed">
                                                     <div class="thumbnail">
-                                                        <img src="/img/sample1.png" alt="">
+                                                        <img class="one" src="/img/sample1.png" alt="">
+                                                        <img class="two" src="/img/sample2.png" alt="">
                                                     </div>
                                                     <div class="desc">
                                                         <p class="designer">Our Legacy</p>
@@ -255,7 +256,8 @@
                                             <li>
                                                 <div class="feed">
                                                     <div class="thumbnail">
-                                                        <img src="/img/sample2.png" alt="">
+                                                        <img class="one" src="/img/sample1.png" alt="">
+                                                        <img class="two" src="/img/sample2.png" alt="">
                                                     </div>
                                                     <div class="desc">
                                                         <p class="designer">Homme Plisse</p>
@@ -280,7 +282,8 @@
                                             <li>
                                                 <div class="feed">
                                                     <div class="thumbnail">
-                                                        <img src="/img/sample2.png" alt="">
+                                                        <img class="one" src="/img/sample1.png" alt="">
+                                                        <img class="two" src="/img/sample2.png" alt="">
                                                     </div>
                                                     <div class="desc">
                                                         <p class="designer">Homme Plisse</p>
@@ -308,8 +311,8 @@
 
                         <div class="content-sale">
                             <div class="title">
-                                <p>Sale Infomation</p>
-                                <!-- <p class="sub"><i class="fas fa-info-circle"></i>전세계 세일정보 자동 수집</p> -->
+                                <p>세일정보</p>
+                                <p class="sub">전세계 쇼핑몰 세일정보 실시간 수집</p>
                                 <span class="more">
                                     More
                                     <i class="fas fa-chevron-right right"></i>
@@ -318,9 +321,12 @@
                             <div class="mails">
                                 <ul>
                                     <% for(var i=0;i<5;i++) { %>
-                                    <li>
+                                    <li class="hot">
                                         <div class="mail">
-                                            <p class="subject">Sensse Up to 70%</p>
+                                            <p class="subject">
+                                                <span>hot</span>
+                                                Sensse Up to 70%
+                                            </p>
                                             <p class="content">blah blah blahblah blah...</p>
                                             <p class="date">2020-07-08</p>
                                         </div>

@@ -84,7 +84,13 @@
           max-width: 1280px;
           margin: 0 auto;
           margin-top: 50px;
+          .title{
+            p{
+              text-align: center;
+            }
+          }
           .ranking{
+            margin-top: 50px;
             ul {
               display: flex;
               li {
@@ -118,11 +124,21 @@
           max-width: 1280px;
           margin: 0 auto;
           margin-top: 50px;
+          .title{
+            p{
+              text-align: center;
+            }
+          }
         }
         .content-sale{
           max-width: 1280px;
           margin: 0 auto;
           margin-top: 50px;
+          .title{
+            p{
+              text-align: center;
+            }
+          }
         }
       }
     }
