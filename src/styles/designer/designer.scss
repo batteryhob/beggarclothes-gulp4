@@ -144,8 +144,13 @@ button{
               background-color: $color-black;
             }
           }
+          .date{
+            margin-right: 14px;
+            font-size: 1.4rem;
+            text-align: center;              
+          } 
           .boards{
-            overflow: hidden;         
+            overflow: hidden;       
             .communitys {       
               &.clearfix:after {
                 content:"";
@@ -222,6 +227,34 @@ button{
           }
         }
         .content-chart{
+          padding: 20px;
+          .top{
+            margin-top: 50px;
+            .designer-tag{
+              font-size: 2.2rem;
+              font-family: "Apple SD Gothic Neo";
+              span{
+                font-family: "Noto Sans KR";
+                font-weight: 700;
+                margin-left: 5px;                
+              }
+            }
+            .cafe-tag{
+              font-size: 1.8rem;
+              line-height: 28px;
+              .social{
+                vertical-align: middle;
+                width: 20px;
+                height: 20px;
+                border-radius: 10px;
+                background-color: #fff;
+                margin-left: 5px;
+              }
+            }
+          }
+          .bottom{
+            margin-top: 25px;
+          }
         }
       }
     }

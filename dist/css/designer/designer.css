@@ -382,6 +382,10 @@ button {
         width: 50px;
         height: 2px;
         background-color: #222; }
+    #designer main section .content .content-designer .date {
+      margin-right: 14px;
+      font-size: 1.4rem;
+      text-align: center; }
     #designer main section .content .content-designer .boards {
       overflow: hidden; }
       #designer main section .content .content-designer .boards .communitys.clearfix:after {
@@ -443,6 +447,29 @@ button {
                 text-align: left; }
               #designer main section .content .content-designer .boards .communitys .community .board ul .keyword:hover {
                 border: 1px solid #0077ff; }
+    #designer main section .content .content-chart {
+      padding: 20px; }
+      #designer main section .content .content-chart .top {
+        margin-top: 50px; }
+        #designer main section .content .content-chart .top .designer-tag {
+          font-size: 2.2rem;
+          font-family: "Apple SD Gothic Neo"; }
+          #designer main section .content .content-chart .top .designer-tag span {
+            font-family: "Noto Sans KR";
+            font-weight: 700;
+            margin-left: 5px; }
+        #designer main section .content .content-chart .top .cafe-tag {
+          font-size: 1.8rem;
+          line-height: 28px; }
+          #designer main section .content .content-chart .top .cafe-tag .social {
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            margin-left: 5px; }
+      #designer main section .content .content-chart .bottom {
+        margin-top: 25px; }
   #designer footer {
     width: 100%;
     padding: 18px 12px;
@@ -510,5 +537,7 @@ button {
     #designer main section .content {
       max-width: 1280px;
       margin: 0 auto; }
+      #designer main section .content .content-designer .date {
+        text-align: right; }
     #designer footer {
       padding: 18px 100px; } }
